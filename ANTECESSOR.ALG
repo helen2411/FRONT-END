@@ -22,7 +22,7 @@ limpaTela()
 
 //Saida:escrever no terminal antecessor
 
-escreval("O antecessor do número", numero, "é de", antecessor)
+escreval("O antecessor do número", numero, "é", antecessor)
 
 
 Fimalgoritmo
