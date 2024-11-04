@@ -32,4 +32,4 @@ escreval (nome())
 Fimalgoritmo
 
 
-//
+//retorne= função /procedimento= não usa retorne
