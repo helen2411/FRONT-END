@@ -1,0 +1,44 @@
+
+
+p{
+    font-size: 14px;
+}
+
+
+h4{
+    color: rgb(97, 166, 175);
+}
+
+img{
+    /* largura */
+    width: 650px;
+    /* altura */
+    height: auto;
+    /* arrendondamento */
+    border-radius: 0%;
+    border: 5px solid rgb(153, 191, 192);
+    position: relative;
+    float: right;
+
+}
+
+h1{
+    color:rgb(74, 86, 117);
+    background-color: rgb(203, 213, 222);
+    /* text aling : alinhamento de texto */
+    text-align: center;
+    /* margin: margem externa */
+    margin: 0px;
+    /* padding: margem interna */
+    padding: 0px;
+    /* border: borda (largura,tipo, cor) */
+    border: 1px solid white;
+    font-size: 40px;
+}
+
+
+body{
+    /* bacground color: cor de fundo */
+    background-color: rgb(221, 229, 243);
+}
+

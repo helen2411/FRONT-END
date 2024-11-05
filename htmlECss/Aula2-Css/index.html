@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula2</title>
+    <!-- metodo 1: link (exporta arquivo externo) -->
+    <!-- metodo 2: tag style (traz tag para abrir  um espaço html) -->
+    <!-- metodo 3: atributo style (traz atributo direto do elemento) -->
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+        .para{
+            /* color : cor da fonte */
+            color: rgb(10, 3, 110);
+            /* font family: tipografia */
+            font-family: 'Times New Roman', Times, serif;
+           
+        }
+
+        body{
+            /* bacground color: cor de fundo */
+            background-color: rgb(214, 222, 236);
+        }
+
+        h1{
+            color:rgb(73, 98, 167);
+            background-color: rgb(149, 179, 210);
+            /* text aling : alinhamento de texto */
+            text-align: center;
+            /* margin: margem externa */
+            margin: 20px;
+            /* padding: margem interna */
+            padding: 20px;
+            /* border: borda (largura,tipo, cor) */
+            border: 1px solid white;
+
+        }
+
+        #destacado{
+            background-color: rgb(163, 199, 214);
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Título1</h1>
+    <br>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit distinctio reiciendis dolorem placeat error soluta, voluptas obcaecati beatae nesciunt. Consequuntur minima qui repellat esse a eos neque perspiciatis dolorem? Similique.</p>
+
+    <h1>Título2</h1>
+    <br>
+    <h2 id="destacado">Subtítulo</h2>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas, repellat voluptate, officia vel perferendis reiciendis laudantium perspiciatis nesciunt suscipit minus possimus quia vitae facilis corporis harum doloribus, ut voluptates.</p>
+    
+    <img src="céu.jpg" alt="Céu estrelado com a lua">
+
+</body>
+</html>
