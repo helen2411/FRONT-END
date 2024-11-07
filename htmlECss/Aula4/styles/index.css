@@ -54,3 +54,21 @@ footer{
     bottom:0%;
 }
 
+#SobreNos{
+    width: 80%;
+    background-color: rgb(253, 251, 231);
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 10px 10px 10px rgb(100, 137, 110);
+    padding: 10px ;
+    margin: 20px auto;
+    color: rgb(144, 177, 155);
+}
+
+}
+
+.img4{
+    
+    width: 90%;    
+}
+
