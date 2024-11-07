@@ -35,9 +35,25 @@ body{
 
 img{
     width: 90%;
+    border-radius: 10px;
+}
 
 }
 
 p{
     text-align: center;
+}
+
+#img1{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    line-height: 80px;
+}
+
+#img2{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    line-height: 80px;
 }
