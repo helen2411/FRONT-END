@@ -1,0 +1,59 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.pai{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(200, 173, 244);
+    /* posicionamento= pai */
+    display: flex;
+    margin: 20px;
+   
+}
+
+#pai1{
+    /* alinhamento no eixo x */
+    justify-content: space-between;
+    /* alinhamento no eixo y */
+    align-items: center;
+    /* start(left)-esquerda */
+     /* end(right)-direita */
+      /* senter-centro */
+       /* space-between - joga os elementos na lateral 
+            space-between=espaçamento entre elementos */
+        /* space-around- joga os elementos na lateral com espaço */
+
+}
+
+#pai2{
+    /* gap-espaço entre elementos */
+    gap: 20px;
+    /* wrap- joga os elementos caso não caibam na tela */
+    flex-wrap: wrap;
+    /* row-linha */
+    /* clumn- coluna */
+    flex-direction: row;
+}
+
+.filho{
+    width: 30px;
+    height: 30px;
+}
+
+.f1{
+    background-color: rgb(178, 96, 255);
+}
+
+.f2{
+    background-color: rgb(171, 151, 189);
+}
+
+.f3{
+    background-color: rgb(37, 11, 61);
+}
+
+.f4{
+    background-color: rgb(123, 91, 154);
+}
