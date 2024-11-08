@@ -69,5 +69,29 @@ footer{
     width: 80%;
     background-color: rgb(253, 251, 231);
     border-radius: 10px;
-    margin: 73px;
+    margin: 150px;
+}
+
+.produto{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(236, 248, 238);
+}
+
+#catalogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto img{
+    width: 100%;
+    border-radius: 15%;
+
 }
