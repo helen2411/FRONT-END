@@ -65,10 +65,9 @@ footer{
     color: rgb(144, 177, 155);
 }
 
+#img5{
+    width: 80%;
+    background-color: rgb(253, 251, 231);
+    border-radius: 10px;
+    margin: 73px;
 }
-
-.img4{
-    
-    width: 90%;    
-}
-
