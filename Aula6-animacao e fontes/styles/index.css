@@ -1,0 +1,58 @@
+/* Animação step by step */
+@keyframes animacao  {
+     0%{
+        background-color: rgb(91, 238, 238);
+    }
+    50%{
+        background-color: rgb(0, 138, 138);
+    }
+    100%{background-color: rgb(142, 201, 201);}    
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Pacifico", cursive;
+}
+
+/* .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+
+.caixa{
+    width: 200px ;
+    height: 200px;
+    margin: 10px ;
+    border-radius: 10px;
+}
+
+#caixa1{
+    background-color: rgb(104, 160, 141);
+    transition: 1s;
+}
+
+#caixa1:hover{
+    border-radius: 100%;
+    transition: 1s;
+    animation: 1s animacao;
+}
+
+#caixa2{
+    background-color: rgb(164, 251, 241);
+    transition: 0.5s;
+}
+
+#caixa2:active{
+    width: 80%;
+    transition: 0.5;
+    background-color: aqua;
+}
+
+#caixa3{
+    background-color: rgb(87, 164, 171);
+}
+
+
