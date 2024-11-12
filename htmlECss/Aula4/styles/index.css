@@ -21,11 +21,6 @@ header h2{
     margin-left: 20px;
 }
 
-nav{
-    float: right;
-    margin-right: 20px;
-}
-
 nav a{
     color: aliceblue;
     /* text decortion: decoração do texto */
@@ -47,51 +42,4 @@ nav a{
     color: rgb(237, 234, 229);
     line-height: 300px;
     border-radius: 5%;
-}
-
-footer{
-    position:absolute;
-    bottom:0%;
-}
-
-#SobreNos{
-    width: 80%;
-    background-color: rgb(253, 251, 231);
-    border-radius: 10px;
-    text-align: justify;
-    box-shadow: 10px 10px 10px rgb(100, 137, 110);
-    padding: 10px ;
-    margin: 20px auto;
-    color: rgb(144, 177, 155);
-}
-
-#img5{
-    width: 80%;
-    background-color: rgb(253, 251, 231);
-    border-radius: 10px;
-    margin: 150px;
-}
-
-.produto{
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: rgb(236, 248, 238);
-}
-
-#catalogo{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.produto img{
-    width: 100%;
-    border-radius: 15%;
-
 }

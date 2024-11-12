@@ -9,6 +9,12 @@
     100%{background-color: rgb(142, 201, 201);}    
 }
 
+/* fonte baixada */
+@font-face{
+    font-family: Bleeding;
+    src:url(../Fontes/Bleeding_Cowboys.ttf)
+}
+
 *{
     padding: 0px;
     margin: 0px;
