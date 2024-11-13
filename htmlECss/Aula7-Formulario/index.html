@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <main>
+        <h1>Formulários</h1>
+        <form action="#">
+
+            <!-- NOME -->
+        <div class="form-group">
+            <label for="nome">Nome: </label>
+            <input required type="text" id="nome">  
+        </div>
+
+             <!-- E-MAIL -->
+        <div class="form-group">
+            <label for="email">E-mail: </label>
+            <input required placeholder="ex: username@gmail.com" type="email" name="" id="email">  
+        </div>
+
+             <!-- SENHA -->
+        <div class="form-group">
+            <label for="senha">Senha: </label>
+            <input required type="password" id="senha">  
+        </div>
+
+             <!-- DATA DE NASCIMENTO -->
+        <div class="form-group">
+            <label for="data">Data de Nascimento: </label>
+            <input type="date" id="data">  
+        </div>
+
+             <!-- Gênero -->
+
+        <div class="form-group">
+
+            <label for="genero">Gênero</label>
+            <select name="" id="genero">
+                <option value="">Feminino</option>
+                <option value="">Masculino</option>
+                <option value="">Outros</option>
+            </select>
+
+        </div>
+
+            <button onclick="mensagem()">CONFIRMAR</button>
+        </form>
+    </main>
+
+    <script>
+        function mensagem() {}
+        alert('Dados Cadastrados com sucesso!')
+    </script>
+    
+</body>
+</html>

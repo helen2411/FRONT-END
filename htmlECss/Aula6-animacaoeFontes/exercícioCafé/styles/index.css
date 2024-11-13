@@ -4,13 +4,15 @@
 }
 
 body{
-    background-color: rgb(213, 191, 172);
+    background-image: url(../images/istockphoto-1221212982-612x612.jpg);
+    text-align: center;
+       
 }
 
 header,footer{
     width: 100%;
     padding: 30px 0px;
-    background-color: rgb(162, 135, 96);
+    background-color: rgb(34, 23, 2);
     color: azure;
     font-family: 'Times New Roman', Times, serif ;
     float: aline;
@@ -33,19 +35,36 @@ footer{
     width: 30%;
     background-color: rgb(253, 251, 231);
     border-radius: 10px;
-    margin: 150px;
+    margin: 10px;
+    align-items: center;
 }
 
-.produto{
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: rgb(236, 248, 238);
+#home{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(235, 230, 223);
+    color: rgb(46, 42, 5);
+    font-family: 'Times New Roman', Times, serif ;
+    float: aline;
+    text-decoration: none;
 }
+
+#conteudo{ 
+    background-color: rgb(234, 229, 223);
+    color: rgb(88, 59, 31);
+    font-family: 'Times New Roman', Times, serif ;
+    float: center;
+    padding: 10px 0px;
+    margin: 50px;
+    border-radius: 3%;
+}
+
+#texto{
+    text-align: justify;
+    margin: 20px;
+}
+
+
 
 
 

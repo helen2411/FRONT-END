@@ -1,0 +1,52 @@
+*{
+padding: 0%;
+margin: 0%;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(157, 203, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(); */
+}
+
+main{
+    width: 30%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 232, 232);
+}
+
+form{
+    width: 60%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+  
+}
+
+.form-group{
+    height: 30px;
+    flex-direction: column;
+    background-color: rgb(180, 211, 205);
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border:none
+    /* outline: none; */
+}
+
+input:focus{
+    padding: 8px;
+    transition: 0.5s;
+    border: 1px solid white ;
+}
