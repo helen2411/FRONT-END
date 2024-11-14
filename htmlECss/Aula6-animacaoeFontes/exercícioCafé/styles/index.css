@@ -14,11 +14,12 @@ header,footer{
     padding: 30px 0px;
     background-color: rgb(34, 23, 2);
     color: azure;
-    font-family: 'Times New Roman', Times, serif ;
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 600;
+    font-style: normal;
     float: aline;
 }
-
-
+   
 nav{
     float: right;
     margin-right: 20px;
@@ -26,6 +27,7 @@ nav{
 
 
 footer{
+    font-family:'Times New Roman', Times, serif;
     position:absolute;
     bottom:0%;
 }
@@ -45,17 +47,18 @@ footer{
     background-color: rgb(235, 230, 223);
     color: rgb(46, 42, 5);
     font-family: 'Times New Roman', Times, serif ;
-    float: aline;
     text-decoration: none;
+    float: aline;
+    
 }
 
 #conteudo{ 
     background-color: rgb(234, 229, 223);
     color: rgb(88, 59, 31);
-    font-family: 'Times New Roman', Times, serif ;
+    font-family: "Cookie", cursive ;
     float: center;
-    padding: 10px 0px;
-    margin: 50px;
+    padding: 40px 0px;
+    margin: 60px;
     border-radius: 3%;
 }
 
@@ -63,6 +66,13 @@ footer{
     text-align: justify;
     margin: 20px;
 }
+
+/* .lavishly-yours-regular {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
 
 
 
