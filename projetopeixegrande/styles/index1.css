@@ -10,9 +10,9 @@ body{
 
  header, footer{
     width: 100%;
-    height: 20px;
+    height: 30px;
     padding: 10px;
-    background-color: rgb(162, 161, 161);
+    background-color: rgb(50, 50, 50);
     text-align: end;
  }
 
@@ -33,13 +33,13 @@ body{
 #log1 {
     width: 16%;
     height: 466px;
-    padding: auto 0px;
+    padding: 0px 0px;
 }
 
 #log2 {
     width: 83%;
     height: 466px;
-    padding: auto 0px;
+    padding: 0px 0px;
 }
 
 a{
@@ -51,80 +51,33 @@ a{
     text-decoration: none;   
 }
 
-/* #serv, #age{
-    width: 50%;
+.container {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(241, 241, 241);      
+}
+
+
+h3{
+    width: 100%;
     padding: 30px;
     background-color: rgb(114, 113, 113);
     color: #e8e6e6;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-direction: auto;
+}
 
-} */
- #serv{
-    width: 700px;
-    height: 800px;
-    background-color: rgb(126, 113, 148);
-    /* posicionamento= pai */
-    display: flex-end;
+#bra{
+
+    width: 90%;
+    padding: 10px auto;
     margin: 0px;
-    padding: 0%;
-    
-   
- }
-
-#age{
-
-    width: 300px;
-    height: 350px;
-    background-color: rgb(200, 173, 244);
-    /* posicionamento= pai */
-    display: flex-end;
-    margin: 0px;
-    float: end;
-    box-align: end;''
-   
+    background-color: rgb(255, 255, 255);
+    color: #000000; 
 }
 
-#cont{
-
-    width: 200px;
-    height: 350px;
-    background-color: rgb(35, 19, 61);
-    /* posicionamento= pai */
-    display: flex;
-    margin: 20px;
-   
-
+h5{
+    font-size: medium;
 }
 
-.pai{
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    height: 300px;
-    background-color: rgb(200, 173, 244);
-    /* posicionamento= pai */
-    display: flex;
-    margin: 20px;
-    box-align: center;
+#inf{
+    color: aliceblue;
 }
-
-#pai1{
-    justify-content: space-around;
-    align-items: flex-end;
-    box-align: center;
-}
-
-#caixa{
-
-    width: 200px;
-    height: 300px;
-    background-color: rgb(86, 6, 213);
-    /* posicionamento= pai */
-    display: flex-end;
-    margin: 0px;
-    
-}
-
