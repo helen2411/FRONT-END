@@ -12,7 +12,7 @@
 
     --corPrimaria:  rgb(177, 218, 218)  ;
     --corSecundaria: rgb(33, 105, 172) ;
-    --branco: white;
+    --branco: rgb(214, 250, 248);
 } 
 
 header,footer{
@@ -50,7 +50,7 @@ nav{
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
 }
 
 button{
