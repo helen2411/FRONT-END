@@ -17,3 +17,13 @@ body{
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+#logo{
+    background-color: rgb(2, 141, 141);
+    width:100%;
+    background-color: var(--corPrimaria);
+    padding: 20px 0px ;
+    display: flex;
+    justify-content: space-around;
+
+}
