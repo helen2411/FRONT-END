@@ -13,7 +13,7 @@ lista_categorias.push(new Categoria('Bebidas Frutadas','images/frutas.jpg','Noss
 
 lista_categorias.push(new Categoria('Chás','images/chá.jpg','Nossos chás  são preparados com ingredientes de altíssima qualidade, que permitem uma experiência incrível. Temos uma ampla variedade de sabores'))
 
-lista_categorias.push(new Categoria('Gaseificadas','images/gaseificada.jpg','Nossas bebidas gaseificadas são preparadas com ingredientes de altíssima qualidade, que permitem uma experiência incrível. Temos uma ampla variedade de sabores'))
+lista_categorias.push(new Categoria('Gaseificadas','images/gaseificada1.jpg','Nossas bebidas gaseificadas são preparadas com ingredientes de altíssima qualidade, que permitem uma experiência incrível. Temos uma ampla variedade de sabores'))
 
 lista_categorias.forEach(categoria => {
     document.querySelector('#categoriaItems').innerHTML +=`
