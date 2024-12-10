@@ -1,0 +1,86 @@
+*{
+
+    padding: 0%;
+    margin: 0%;
+   
+
+}
+
+  
+
+:root{
+
+    --corPrimaria:  rgb(145, 1, 1)  ;
+    --corSecundaria: rgb(54, 61, 59) ;
+    --branco: rgb(247, 0, 0);
+} 
+
+header,footer{
+
+    width:100%;
+    background-color: var(--corPrimaria);
+    padding: 20px 0px ;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+nav{
+
+    display: flex;
+    gap: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+#logo{
+
+    display: flex;
+    gap: 20px;
+}
+
+#logo img{
+    width: 30px;
+}
+
+#catalogo{
+
+    width: 80%;
+    margin: 10px auto ;
+    padding: 20px;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+button{
+    display: flex;
+    padding: 2px;
+}
+
+.livro{
+    width: 200px;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.livro img{
+    width: 80%;
+}
+
+h1,h2{
+    
+    color: rgb(19, 19, 19);
+}
+
+
+  
