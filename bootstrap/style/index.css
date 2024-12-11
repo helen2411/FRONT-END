@@ -2,7 +2,6 @@
 
     padding: 0%;
     margin: 0%;
-   
 
 }
 
@@ -22,9 +21,9 @@ header,footer{
     padding: 20px 0px ;
     display: flex;
     justify-content: space-around;
-    
 
 }
+
 
 nav{
 
@@ -82,5 +81,7 @@ h1,h2{
     color: rgb(19, 19, 19);
 }
 
-
+head{
+    background-color: black;
+}
   
