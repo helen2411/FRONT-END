@@ -10,13 +10,18 @@
 /* Texto dos filmes */
 
 .card-title, .card-text{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .card-title{
     text-align: center;
     text-decoration: underline;
-    color: rgb(125, 0, 0);
+    color: rgb(218, 200, 41);
+}
+
+.card{
+    width: 200px!important;
+    --bs-card-bg: rgba(26, 24, 24, 0.445) ;
 }
 
 #banner{
@@ -27,7 +32,9 @@
     border-radius: 2%;
 }
 
-
+.text-body-secondary{
+    color: aliceblue!important;
+}
 
 
 
