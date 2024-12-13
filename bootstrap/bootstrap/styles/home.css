@@ -8,7 +8,7 @@
 
 body{
   /* background-color: black; */
-  background-image: url(../Drinks/images/fundo\ pag1.png);
+  background-image: url(...);
   background-repeat:no-repeat ;
   /* position: fixed; */
   /* top: 0;
@@ -20,5 +20,5 @@ body{
 }
 
 header{
-    background-color: bisque;
+    background-color: rgb(255, 228, 196);
 }
