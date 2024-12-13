@@ -1,5 +1,21 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
 body{
-    background-image: url(../Drinks/images/);
+  /* background-color: black; */
+  background-image: url(../Drinks/images/fundo\ pag1.png);
+  background-repeat:no-repeat ;
+  /* position: fixed; */
+  /* top: 0;
+  left: 0%;
+  width: auto;
+  height: auto;
+  margin: 0%; */
 
 }
 
