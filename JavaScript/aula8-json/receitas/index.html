@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Livro de Receitas</title>
+</head>
+<body>
+  <select id="categorias">
+    <option value="salgado">Salgado</option>
+    <option value="doce">Doce</option>
+    <option value="suco">Suco</option>
+  </select>
+  <button onclick="exibirReceitas(document.getElementById('categorias').value)">Buscar</button>
+  <ul id="lista-receitas"></ul>
+  <div id="detalhes-receita"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
