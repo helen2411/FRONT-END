@@ -7,8 +7,8 @@
 
 
 body{
-  /* background-color: black; */
-  background-image: url(...);
+  background-color: rgb(255, 255, 255);
+  /* background-image: url(../Drinks/images/cubo3.jpg); */
   background-repeat:no-repeat ;
   /* position: fixed; */
   /* top: 0;
