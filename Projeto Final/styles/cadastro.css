@@ -15,6 +15,7 @@ body{
 
 
  .containercadastro {
+    margin: -100px;
     position: absolute;
     bottom: 150px;
     background: #a4a19c40;
