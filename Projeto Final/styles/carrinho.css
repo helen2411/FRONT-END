@@ -2,3 +2,19 @@
 body{
     background-image: url(../img/Madeira.png);
 }
+
+.carrinho {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f0f0f0;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carrinho.active {
+    transform: translateX(0);
+  }
