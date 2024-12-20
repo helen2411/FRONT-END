@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .active {
+    background-color: #ddd;
+  }
+
+  img{
+    width: 700px; /* Ajuste o tamanho conforme necessário */
+    height: 230px;
+    align-items: center;
+  }
