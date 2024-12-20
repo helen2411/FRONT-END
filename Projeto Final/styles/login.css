@@ -1,0 +1,90 @@
+
+
+ body{
+    background-image: url(../img/Madeira.png);
+    color: #ccc;
+ }
+
+#bem {
+     /* background-image: url(../images/DOCES\ DA\ COLMEIS\ \(1\).png);
+    background-repeat: no-repeat;  */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.containerlogin {
+    position: absolute;
+    bottom: 150px;
+    background: #a4a19c40;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}  
+
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.facebook {
+    background: #3b5998;
+    color: #fff;
+}
+
+.google {
+    background: #db4437;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: #53cf19b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* #urso{
+    position: absolute;
+    top: -30px;
+    left: 370px;
+    width: 400px;
+    padding: 10px;
+    /* display:flex ; */
+    /* justify-content: center; */
+    /* align-items: center; }*/
+

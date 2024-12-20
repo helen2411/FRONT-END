@@ -1,0 +1,99 @@
+body{
+    background-image: url(../img/Madeira.png);
+    color: #ccc;
+ }
+
+ #cad {
+    /* background-image: url(../images/DOCES\ DA\ COLMEIS\ \(1\).png);
+   background-repeat: no-repeat;  */
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+}
+
+
+ .containercadastro {
+    position: absolute;
+    bottom: 150px;
+    background: #a4a19c40;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}  
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+button[type="submit"] {
+    background: #4caf4fd3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+input {
+    background-color: rgba(223, 217, 213, 0.589);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* body {
+    font-family: "Sevillana", cursive;
+    background-image: url(../images/DOCES\ DA\ COLMEIS\ \(1\).png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #e6933328;;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+} */
