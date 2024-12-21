@@ -21,6 +21,32 @@ h5{
   text-align: center;
 }
 
+ /* Estilos para o container do peso */
+.peso {
+
+  color: #000000;
+ 
+}
+
+ /* Estilos para as opções */
+.opcoes {
+  display: flex;
+ 
+}
+
+/* Estilos para os botões de rádio
+
+.opcoes input[type="radio"] {
+  border-radius: 5%;
+ 
+} */
+
+
+/* Estilos para os rótulos das opções 
+.opcoes label {
+  
+}*/
+
 
 .footer {
     background-color:#341c0100 !important; /* Cor de fundo */
