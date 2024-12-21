@@ -17,11 +17,15 @@ h5{
     
 }
 
+#navbar-nav-pro{
+  text-align: center;
+}
+
+
 .footer {
     background-color:#341c0100 !important; /* Cor de fundo */
     color: #fff; /* Cor do texto */
-    padding: 100px 0; /* Espaçamento interno */
-    text-align: justify; /* Alinhamento do texto */
+    padding: 19px 0; /* Espaçamento interno */
     display: flex;
     justify-content: space-between;
     /* padding: 20px; */
@@ -54,20 +58,11 @@ h5{
   }
   
   .footer-section a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
   }
   
-  .payment-icons img, .shipping-icons img, .social-icons img, .newsletter input {
-    margin-right: 5px;
-    max-width: 50px; /* Ajuste o tamanho dos ícones */
-      vertical-align: middle;
-  }
-  
-  .social-icons a {
-      display: inline-block; /* Para evitar quebras de linha */
-  }
-  
+ 
   .newsletter input {
       padding: 8px;
       border: none;
@@ -76,7 +71,7 @@ h5{
   .newsletter button {
       padding: 8px 12px;
       border: none;
-      background-color: #007bff; /* Cor de exemplo, ajuste conforme necessário */
+      background-color: #efc5a6; /* Cor de exemplo, ajuste conforme necessário */
       color: white;
       cursor: pointer;
   }
