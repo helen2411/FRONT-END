@@ -1,9 +1,7 @@
-const carrinho = document.getElementById('Carrinho');
-const itens = [];
+// Obtendo os parâmetros da URL
+const urlParams = new URLSearchParams(window.location.search);
+const itemId = urlParams.get('item_id');
+const itemNome = urlParams.get('item_nome');
 
-function adicionarItem(item) {
-    itens.push(item);
-    const li = document.createElement('li');
-    li.textContent = item;
-    carrinho.appendChild(li);
-}
+// Exibindo as informações do item (por exemplo, em um elemento HTML)
+document.getElementById('item-adicionado').textContent = "Você adicionou: " + itemNome;
