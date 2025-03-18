@@ -39,10 +39,10 @@
 
     <h1>Carrinho de Compras</h1>
 
-    <a href="?produto= Notebook "><img src="images/notebook.jpg" alt="Notebook"><br>Adicionar Notebook</a> <br>
-    <a href="?produto= Celular "><img src="images/celular.jpg" alt="Celular"><br>Adicionar Celular</a> <br>
-    <a href="?produto= Tablet "><img src="images/tablet.jpg" alt="Tablet"><br>Adicionar Tablet</a> <br>
-    <a href="?produto= Rádio "><img src="images/radio.jpg" alt="Rádio"><br>Adicionar Rádio</a> <br>
+    <a href="?produto= Notebook "><img src="images/notebook.jpg" alt="Notebook"  width="200" height="150"><br>Adicionar Notebook</a> <br>
+    <a href="?produto= Celular "><img src="images/celular.jpg" alt="Celular"  width="200" height="150"><br>Adicionar Celular</a> <br>
+    <a href="?produto= Tablet "><img src="images/tablet.jpg" alt="Tablet"  width="200" height="150"><br>Adicionar Tablet</a> <br>
+    <a href="?produto= Rádio "><img src="images/radio.jpg" alt="Rádio"  width="200" height="150"><br>Adicionar Rádio</a> <br>
     
     <!-- Deletar -->
     <!-- <a href="?deletarCarrinho= True ">Deletar  Carrinho</a> <br> -->
