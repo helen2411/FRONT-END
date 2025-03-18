@@ -42,6 +42,17 @@
         $_SESSION['carrinho'] = [];    
     }
 
+    if(isset($_GET['removerItem'])){
+        foreach ($_SESSION['carrinho'] as $id => $produto){
+            if($produto->id == $_GET['removerItem']){
+                unset($_SESSION['carrinho'][$id]);
+                $_SESSION['carrinho'] = array_values($_SESSION['carrinho']);
+                break;
+            }
+        }
+
+    }
+
     // var_dump($_SESSION['carrinho']);
 ?>
 
@@ -93,6 +104,7 @@
                     <h1> $produto->nome</h1> 
                     <p> R$ $produto->valor </p>
                     <p>  $produto->desc </p>
+                    <a href='?removerItem=$produto->id'> Remover </a>
                 </li>";
         }
     
