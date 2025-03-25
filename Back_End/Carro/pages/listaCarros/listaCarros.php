@@ -1,5 +1,9 @@
 <h1>Lista de Carros</h1>
 
+<a href="index.php?menu=adicionarCarro">
+    <button type="button">Adicionar carro</button>
+</a>
+
 <table>
     <tr>
         <th>Modelo</th>
