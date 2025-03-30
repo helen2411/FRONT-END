@@ -1,68 +1,79 @@
-/* Estilos gerais */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     margin: 0;
-    padding: 20px;
     background-color: #f4f4f4;
     color: #333;
 }
 
-h1 {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
     text-align: center;
-    margin-bottom: 30px;
-    color: #2c3e50; /* Cor mais escura para o título */
 }
 
-/* Grid de catálogo */
-.catalogo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo em grid */
-    gap: 20px;
+header h1 {
+    margin: 0;
 }
 
-/* Item do catálogo */
-.catalogo-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
-    overflow: hidden; /* Garante que a imagem não vaze */
-    transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+#mural {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
-.catalogo-item:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-
-.catalogo-item img {
+.lista {
     width: 100%;
-    height: 200px; /* Altura fixa para as imagens */
-    object-fit: cover; /* Garante que a imagem preencha o espaço */
-    border-bottom: 1px solid #ddd; /* Separador entre imagem e conteúdo */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.catalogo-item-content {
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    text-align: center;
+    width: 300px; /* Ajuste a largura conforme necessário */
 }
 
-.catalogo-item h3 {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #2c3e50; /* Cor mais escura para o nome */
+.card li {
+    margin-bottom: 8px;
 }
 
-.catalogo-item p {
-    color: #e74c3c; /* Cor de destaque para o preço */
+.card li:last-child {
+    margin-bottom: 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Estilos adicionais para melhorar a aparência */
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card .nome {
     font-weight: bold;
     font-size: 1.1em;
 }
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 600px) {
-    .catalogo-grid {
-        grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
-    }
-
-    .catalogo-item {
-        margin: 10px 0; /* Menos margem em dispositivos móveis */
-    }
+.card .valor {
+    color: green;
+    font-weight: bold;
 }
