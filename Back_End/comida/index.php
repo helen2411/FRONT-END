@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
                         <ul>
                             <div class="card">
                                 <li><?=$dados['nome']?></li>
-                                <li><?=$dados['valor']?></li>
+                                <li>R$ <?=$dados['valor']?></li>
                                 <img src="<?=$dados['imagem']?>"></img>
                             </div>
                         </ul>
