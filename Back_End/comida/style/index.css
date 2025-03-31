@@ -1,12 +1,14 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-image: url(../img/food-366875_640.jpg);
+
+    /* background-color: #f4f4f4; */
+    color: #ffffff;
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -37,13 +39,14 @@ ul {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #000000;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
     width: 300px; /* Ajuste a largura conforme necessário */
+    
 }
 
 .card li {
