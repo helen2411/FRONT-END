@@ -76,17 +76,17 @@ form input[type="number"] {
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Para organizar os itens dentro do container */
-    align-items: center; /* Alinhar verticalmente os itens */
+    display: flex; /* Ornanização dos itens do container */
+    align-items: center; /* Alinhamento vertical dos itens */
   }
   
   .container img {
-    max-width: 100px; /* Defina uma largura máxima para a imagem */
-    height: auto; /* Manter a proporção da imagem */
+    max-width: 100px; /* largura máxima da imagem  */
+    height: auto; /* proporção da imagem */
     margin-right: 15px;
     border-radius: 4px;
-    width: 100px; /* Defina a largura desejada */
-    height: 150px; /* Defina a altura desejada */
+    width: 100px; /* largura desejada */
+    height: 150px; /* altura desejada */
   }
   
   .container p {
@@ -101,19 +101,19 @@ form input[type="number"] {
   /* Estilos responsivos  */
   @media (max-width: 600px) {
     .container {
-      flex-direction: column; /* Empilhar os itens em telas menores */
-      align-items: flex-start; /* Alinhar à esquerda em telas menores */
+      flex-direction: column; /* itens alinhados em telas menores */
+      align-items: flex-start; /* Alinhamento à esquerda em telas menores */
     }
   
     .container img {
       margin-bottom: 10px;
       margin-right: 0;
-      max-width: 80%; /* A imagem pode ocupar mais largura em telas menores */
+      max-width: 80%; /* imagem mais larga em telas maiores */
     }
   }
 
   button {
-    background-color: #5cb85c; /* Cor de fundo verde para o botão */
+    background-color: #5cb85c; /* Cor de fundo para o botão */
     color: white;
     padding: 10px 15px;
     border: none;
