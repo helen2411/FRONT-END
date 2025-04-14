@@ -12,8 +12,9 @@
         //fetch_asso = vai acessar um query, e contar os resultados
         while($dados = mysqli_fetch_assoc($query)){
             ?>
-        <div>
-                    <p><?= $dados['nome'] ?></p>
+        <div class="container">
+                    <img src="<?= $dados['imagem'] ?>" alt="">
+                    <p class="book-title"><?= $dados['nome'] ?></p>
                     <p><?= $dados['descricao'] ?></p>
                     <p><?= $dados['avaliacao'] ?></p>
         </div>
