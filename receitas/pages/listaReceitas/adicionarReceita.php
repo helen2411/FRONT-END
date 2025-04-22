@@ -1,25 +1,29 @@
-<h1>Adicionar um novo Carro</h1>
+<h1>Adicionar Receita</h1>
 
 <form action="index.php?menu=dbAdicionarReceita" method="post">
     <div class="form-group">
-        <label for="modelo">Modelo:</label>
-        <input type="text" id="modelo" name="modelo">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo">
     </div>
     <div class="form-group">
-        <label for="marca">Marca:</label>
-        <input type="text" id="marca" name="marca">
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao">
     </div>
     <div class="form-group">
-        <label for="valor">Valor:</label>
-        <input type="number" id="valor" name="valor">
+        <label for="receitatexto">Receita:</label>
+        <input type="longtext" id="receitatexto" name="receitatexto">
     </div>
     <div class="form-group">
-        <label for="modelo">Ano:</label>
-        <input type="date" id="ano" name="ano">
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor">
     </div>
     <div class="form-group">
-        <label for="modelo">Cor:</label>
-        <input type="text" id="cor" name="cor">
+        <label for="tipo_receita">Tipo:</label>
+        <input type="text" id="tipo_receita" name="tipo_receita">
+    </div>
+    <div class="form-group">
+        <label for="imagem_url">Imagem:</label>
+        <input type="url" id="imagem_url" name="imagem_url">
     </div>
     <button type="submit">Cadastrar</button>
 </form>

@@ -1,0 +1,188 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Ajusta a altura mínima subtraindo a altura do header */
+}
+
+/* Estilos para a página Home (pages/Home/home.php) - você pode adicionar mais estilos específicos aqui */
+.home-container {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.home-message {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Estilos para a página Lista de Receitas (pages/listaReceitas/listaReceitas.php) - adicione aqui os estilos específicos */
+.lista-receitas-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lista-receitas-title {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a página Adicionar Receita (pages/listaReceitas/adicionarReceita.php) */
+.adicionar-receita-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.adicionar-receita-title {
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a página Editar Receita (pages/listaReceitas/editarReceita.php) - similar ao adicionar */
+.editar-receita-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.editar-receita-title {
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para a página Deletar Receita (pages/listaReceitas/deletarReceita.php) */
+.deletar-receita-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.deletar-receita-title {
+    color: #dc3545;
+    margin-bottom: 20px;
+}
+
+.deletar-receita-message {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.deletar-receita-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.deletar-receita-buttons button:hover {
+    opacity: 0.8;
+}
+
+.deletar-receita-buttons .btn-confirmar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deletar-receita-buttons .btn-cancelar {
+    background-color: #6c757d;
+    color: white;
+}
