@@ -1,0 +1,30 @@
+:root{
+    --corPrimaria:#003049;
+    --corSecundaria:#fdfcdc;
+    --corTercearia:#f77f00;
+
+}
+
+header{
+    background-color: var(--corPrimaria);
+}
+
+a{
+    color: var(--corSecundaria)!important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--corTercearia)!important;
+}
+
+#bg_banner{
+    height: 300px!important;
+    background-image: url("../img/comida.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    margin: 10px 0px;
+    border-radius: 10px;
+
+}
