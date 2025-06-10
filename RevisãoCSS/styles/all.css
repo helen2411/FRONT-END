@@ -1,0 +1,109 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+    --dark:black;
+    --clean:  rgba(255, 255, 255, 0.123);
+    --primario: rgba(255, 255, 255, 0.123) ;
+   
+}
+
+header{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    
+}
+
+a:hover{
+    border-bottom: 3px solid coral;
+    color: coral;
+    transition: 0.3s;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#banner{
+    width: 100%;
+    height: 95vh;
+    background-image: url(../images/banner.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    background-attachment: fixed;
+
+}
+
+#efeito{
+    width:100%;
+    height: 100px;
+    /* background-color: crimson; */
+
+}
+
+@keyframes personagem{
+    0%{
+        left:-50px;
+    }
+        50%{
+            left: 50%;
+        }
+    100%{
+        lefth:120%;
+    }  
+}
+
+#personagem{
+    position: absolute;
+    animation: personagem 4s infinite;
+    left: -50px;
+
+}
+
+#sobreJogos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#todosJogos{
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    /* opacity: 10%; */ 
+}
+
+.jogo{
+    width: 300px; 
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogo img{
+    width: 100%;
+}
