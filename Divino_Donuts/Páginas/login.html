@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Divino Donuts</title>
-
+    <title>Divino Donuts - Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
 
-    <main>
+    <div class="login-page-wrapper">
+        <a href="#" class="accessibility-icon" aria-label="Acessibilidade">
+            <i class="fas fa-wheelchair"></i>
+        </a>
 
-        <div class="containerLogin">
+        <div class="login-card-container">
+            <div class="login-card">
+                <img src="images/divino-donuts-logo.png" alt="Divino Donuts Logo" class="login-logo">
+                <form class="login-form">
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="email">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="senha">
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
 
-            <form id="login">
-                <input type="text" id="email" placeholder="E-mail" required>
-                <input type="password" id="senha" placeholder="Senha" required>
-                <button type="submit" id="logar">Login</button>
-            </form>
+                <div class="social-login">
+                    <a href="#" class="social-icon google" aria-label="Login com Google">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon facebook" aria-label="Login com Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
 
-            <p>----------------------</p>
-
-            <div class="social-buttons">
-                <button class="social-btn google">Google</button>
-                <button class="social-btn facebook">Facebook</button>
+                <p class="register-text">
+                    Não possui conta? <a href="#" class="register-link">Cadastre-se</a>
+                </p>
             </div>
-
-            <p>Não Possui Cadastro? <a href="../Páginas/Cadastro.html"> Faça o seu cadastro</a></p>
-
         </div>
+    </div>
 
-
-    </main>
-
-    <h1>Login</h1>
-
+    <script src="../scripts/acessibilidade.js"></script>
 </body>
-
 </html>

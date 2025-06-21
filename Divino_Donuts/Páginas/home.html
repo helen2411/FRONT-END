@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Divino_Donuts/styles/index.css">
-    <title>DIvino Donuts</title>
+    <title>Divino Donuts - Home</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
+    <div class="home-page-wrapper">
+        <a href="#" class="accessibility-icon" aria-label="Acessibilidade">
+            <i class="fas fa-wheelchair"></i>
+        </a>
 
-        <nav class="navbar navbar-expand-lg text-black bg-black">
+        <header class="main-header">
+            <a href="#" class="header-logo-link">
+                <img src="images/divino-donuts-logo.png" alt="Divino Donuts Logo" class="header-logo">
+            </a>
+            <nav class="main-nav">
+                <a href="#" class="nav-item">Sobre Nós</a>
+                <a href="#" class="nav-item">Produtos</a>
+                <a href="login.html" class="nav-item">Login</a> <a href="register.html" class="nav-item">Cadastro</a> </nav>
+        </header>
 
-            <div class="Cabecalho">
-
-                <!-- Logo -->
-                <a class="navbar-brand text-light" href="home.html">Divino Donuts </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active  text-light" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="produtos.html">Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-light" href="Login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-light" href="cadastro.html">Cadastre-se</a>
-                        </li>
-                         
-                    </ul>
+        <main class="home-content">
+            <div class="main-content-box top-box">
                 </div>
 
+            <div class="small-indicators-group">
+                <div class="small-indicator pink"></div>
+                <div class="small-indicator gray"></div>
+                <div class="small-indicator gray"></div>
             </div>
 
-        </nav>
+            <div class="main-content-box bottom-box">
+                </div>
 
-    </header>
+            <section class="product-categories">
+                <div class="category-card yellow-border">
+                    <div class="category-content">
+                        <p class="category-title">Donuts Doces</p>
+                    </div>
+                </div>
+                <div class="category-card blue-border">
+                    <div class="category-content">
+                        <p class="category-title">Donuts Salgados</p>
+                    </div>
+                </div>
+                <div class="category-card pink-border">
+                    <div class="category-content">
+                        <p class="category-title">Bebidas</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
-   
-    <footer>
-    </footer>
-
-    <script src="../Divino_Donuts/scripts/index.js"></script>
-
+    <script src="../scripts/home.js"></script>
 </body>
 </html>

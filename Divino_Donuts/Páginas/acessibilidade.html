@@ -1,33 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Divino_Donuts/styles/index.css">
-    <title>DIvino Donuts</title>
+    <title>Divino Donuts - Acessibilidade</title>
+    <link rel="stylesheet" href="../styles/acessibilidade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
+    <div class="accessibility-page-wrapper">
+        <a href="#" class="accessibility-icon" aria-label="Acessibilidade">
+            <i class="fas fa-wheelchair"></i>
+        </a>
 
-        <nav class="navbar navbar-expand-lg text-black bg-black">
+        <header class="accessibility-header">
+            <h1 class="page-title-header">Acessibilidade</h1>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
 
-            <div class="Cabecalho">
+        <main class="accessibility-main-content">
+            <section class="accessibility-section" id="libras-section">
+                <h2 class="section-title">Libras</h2>
+                <div class="options-grid">
+                    <button class="option-button libras-button" data-feature="libras">
+                        <img src="images/libras-icon.png" alt="Libras Icon" class="option-icon">
+                        </button>
+                </div>
+            </section>
 
-            </div>
+            <section class="accessibility-section" id="font-control-section">
+                <h2 class="section-title">Controle de Fontes</h2>
+                <div class="options-grid">
+                    <button class="option-button" data-feature="tamanho-fonte">
+                        <i class="fas fa-font option-icon"></i>
+                        <span>Tamanho</span>
+                    </button>
+                    <button class="option-button" data-feature="espacamento-letras">
+                        <i class="fas fa-expand-alt option-icon"></i>
+                        <span>Espaçamento<br>-Letras</span>
+                    </button>
+                    <button class="option-button" data-feature="estilo-letra">
+                        <i class="fas fa-italic option-icon"></i>
+                        <span>Estilo de Letra</span>
+                    </button>
+                    <button class="option-button" data-feature="negrito">
+                        <i class="fas fa-bold option-icon"></i>
+                        <span>Negrito</span>
+                    </button>
+                    <button class="option-button" data-feature="espacamento-linhas">
+                        <i class="fas fa-text-height option-icon"></i>
+                        <span>Espaçamento<br>Linhas</span>
+                    </button>
+                </div>
+            </section>
 
-        </nav>
+            <section class="accessibility-section" id="navigation-section">
+                <h2 class="section-title">Navegação</h2>
+                <div class="options-grid">
+                    <button class="option-button" data-feature="leitor-site">
+                        <i class="fas fa-volume-up option-icon"></i>
+                        <span>Leitor de Site</span>
+                    </button>
+                    <button class="option-button" data-feature="modo-escuro-claro">
+                        <i class="fas fa-moon option-icon"></i>
+                        <span>Modo<br>Escuro/Claro</span>
+                    </button>
+                    <button class="option-button" data-feature="pausar-animacoes">
+                        <i class="fas fa-pause-circle option-icon"></i>
+                        <span>Pausar<br>Animações</span>
+                    </button>
+                    <button class="option-button" data-feature="guia-leitura">
+                        <i class="fas fa-book-reader option-icon"></i>
+                        <span>Guia de Leitura</span>
+                    </button>
+                    <button class="option-button" data-feature="destaque-links">
+                        <i class="fas fa-link option-icon"></i>
+                        <span>Destaque<br>de Links</span>
+                    </button>
+                    <button class="option-button" data-feature="estrutura-pagina">
+                        <i class="fas fa-sitemap option-icon"></i>
+                        <span>Estrutura da Página</span>
+                    </button>
+                    <button class="option-button" data-feature="lupa-conteudo">
+                        <i class="fas fa-search-plus option-icon"></i>
+                        <span>Lupa de Conteúdo</span>
+                    </button>
+                    <button class="option-button" data-feature="ocultar-imagens">
+                        <i class="fas fa-image option-icon"></i>
+                        <span>Ocultar Imagens</span>
+                    </button>
+                    <button class="option-button" data-feature="destacar-cabecalho">
+                        <i class="fas fa-underline option-icon"></i>
+                        <span>Destacar Cabeçalho</span>
+                    </button>
+                </div>
+            </section>
 
-        <H1>Acesssibilidade</H1>
+            <section class="accessibility-section" id="color-control-section">
+                <h2 class="section-title">Controle de Cor</h2>
+                <div class="options-grid">
+                    <button class="option-button" data-feature="contraste-cores">
+                        <i class="fas fa-adjust option-icon"></i>
+                        <span>Contraste<br>de Cores</span>
+                    </button>
+                    <button class="option-button" data-feature="intensidade-cores">
+                        <i class="fas fa-fill-drip option-icon"></i>
+                        <span>Intensidade<br>de Cores</span>
+                    </button>
+                    <button class="option-button" data-feature="cores-pagina">
+                        <i class="fas fa-palette option-icon"></i>
+                        <span>Cores da Página</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
 
-    </header>
-
-   
-   
-    <footer>
-    </footer>
-
-    <script src="../Divino_Donuts/scripts/index.js"></script>
-
+    <script src="../scripts/acessibilidade.js"></script>
 </body>
 </html>

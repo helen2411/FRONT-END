@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Divino Donuts - Cadastro</title>
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <h1>Cadastro</h1>
+    <div class="register-page-wrapper">
+        <a href="#" class="accessibility-icon" aria-label="Acessibilidade">
+            <i class="fas fa-wheelchair"></i>
+        </a>
 
-    <main id="cadastro">
+        <div class="register-card-container">
+            <div class="register-card">
+                <form class="register-form">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="nome">
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" placeholder="telefone">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="address" placeholder="endereço">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="zipcode" placeholder="cep">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="email">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="senha">
+                    </div>
+                    <button type="submit" class="register-button">Cadastrar</button>
+                </form>
 
-        <div class="containerCadastro">
-
-            <form id="cadastro">
-            <input type="text" id="nome" placeholder="Nome" required>
-            <input type="date" id="telefone" placeholder="Telefone" required>
-            <input type="text" id="endereco" placeholder="Endereço" required>
-            <input type="text" id="cep" placeholder="Cep" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="senha" placeholder="Senha" required>
-
-            <button type="submit" id="cadastrar">Cadastrar</button>
-        </form>
-
+                <img src="images/divino-donuts-logo.png" alt="Divino Donuts Logo" class="register-logo">
+            </div>
         </div>
+    </div>
 
-
-    </main>
-    
+    <script src="../scripts/cadastro.js"></script>
 </body>
 </html>

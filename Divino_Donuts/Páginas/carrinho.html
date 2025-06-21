@@ -1,33 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Divino_Donuts/styles/index.css">
-    <title>DIvino Donuts</title>
+    <title>Divino Donuts - Carrinho</title>
+    <link rel="stylesheet" href="../styles/carrinho.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
+    <div class="cart-page-wrapper">
+        <a href="#" class="accessibility-icon" aria-label="Acessibilidade">
+            <i class="fas fa-wheelchair"></i>
+        </a>
 
-        <nav class="navbar navbar-expand-lg text-black bg-black">
-
-            <div class="Cabecalho">
-
+        <header class="cart-header">
+            <h1 class="page-title-header">Carrinho</h1>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="cart-icon-header" aria-label="Ícone do Carrinho">
+                <i class="fas fa-shopping-cart"></i>
             </div>
+        </header>
 
-        </nav>
+        <main class="cart-main-content">
+            <div class="cart-container">
+                <div class="cart-item" data-price="12.50">
+                    <div class="item-image-placeholder"></div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus-btn" aria-label="Diminuir quantidade">-</button>
+                        <span class="quantity-value">1</span>
+                        <button class="quantity-btn plus-btn" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </div>
 
-        <H1>Carrinho</H1>
+                <div class="cart-item" data-price="8.00">
+                    <div class="item-image-placeholder"></div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus-btn" aria-label="Diminuir quantidade">-</button>
+                        <span class="quantity-value">1</span>
+                        <button class="quantity-btn plus-btn" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </div>
 
-    </header>
+                <div class="cart-item" data-price="5.00">
+                    <div class="item-image-placeholder"></div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus-btn" aria-label="Diminuir quantidade">-</button>
+                        <span class="quantity-value">1</span>
+                        <button class="quantity-btn plus-btn" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </div>
 
-   
-   
-    <footer>
-    </footer>
+                <div class="summary-line-separator"></div>
 
-    <script src="../Divino_Donuts/scripts/index.js"></script>
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal-value">R$ 0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Entrega</span>
+                        <span id="delivery-value">R$ 0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total-value">R$ 0.00</span>
+                    </div>
+                </div>
 
+                <button class="checkout-button">Finalizar Pedido</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts/carrinho.js"></script>
 </body>
 </html>

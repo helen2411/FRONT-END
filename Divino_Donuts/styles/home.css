@@ -1,0 +1,386 @@
+/* Importação de fontes (já no HTML, mas bom para referência) */
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
+
+/* ========================================================= */
+/* Estilos Globais e Reset Básico */
+/* ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0; /* Cor de fallback */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* ========================================================= */
+/* Layout Principal da Página (Home) */
+/* ========================================================= */
+.home-page-wrapper {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    min-height: 100vh;
+    width: 100vw;
+    background: url('images/donut-background.jpg') no-repeat center center / cover;
+    position: relative;
+    padding-bottom: 80px; /* Espaço para o ícone de acessibilidade */
+}
+
+/* ========================================================= */
+/* Cabeçalho */
+/* ========================================================= */
+.main-header {
+    width: 100%;
+    background-color: #0CC0DF; /* Azul do cabeçalho */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* Espaço entre logo e navegação */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    width: 150px; /* Tamanho do logo */
+    height: auto;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px; /* Espaço entre os itens de navegação */
+}
+
+.nav-item {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.2em;
+    color: #FFFFFF; /* Cor do texto dos links */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    color: #FF6DC0; /* Cor rosa no hover */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================================= */
+/* Conteúdo Principal da Home */
+/* ========================================================= */
+.home-content {
+    flex-grow: 1; /* Permite que ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos internos horizontalmente */
+    padding: 40px 20px;
+    gap: 30px; /* Espaço entre os blocos principais */
+}
+
+.main-content-box {
+    background-color: rgba(255, 255, 255, 0.95); /* Branco semi-transparente */
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Largura padrão */
+    max-width: 1000px; /* Largura máxima para não ficar muito largo */
+    min-height: 200px; /* Altura mínima para o retângulo superior */
+    display: flex; /* Para centralizar o conteúdo interno, se houver */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.top-box {
+    min-height: 250px; /* Ajuste para o tamanho visual da imagem */
+}
+
+.bottom-box {
+    min-height: 200px; /* Ajuste para o tamanho visual da imagem */
+}
+
+
+.small-indicators-group {
+    display: flex;
+    gap: 15px; /* Espaço entre os pequenos retângulos */
+    margin-top: -15px; /* Puxa para cima para sobrepor o main-content-box um pouco */
+}
+
+.small-indicator {
+    width: 60px;
+    height: 12px;
+    border-radius: 6px; /* Para ser oval */
+    background-color: #D9D9D9; /* Cinza padrão */
+}
+
+.small-indicator.pink {
+    background-color: #FF6DC0; /* O primeiro indicador é rosa */
+}
+
+/* ========================================================= */
+/* Seção de Categorias de Produtos */
+/* ========================================================= */
+.product-categories {
+    display: flex;
+    justify-content: center; /* Centraliza os cards de categoria */
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha em telas menores */
+    gap: 30px; /* Espaço entre os cards */
+    margin-top: 50px; /* Espaço acima da seção */
+    width: 100%; /* Ocupa a largura total para centralização e gap */
+    max-width: 1200px; /* Largura máxima para os cards */
+}
+
+.category-card {
+    background-color: #FFFFFF;
+    border-radius: 20px; /* Arredondamento dos cards */
+    width: 280px; /* Largura fixa para os cards (ajustada na responsividade) */
+    height: 220px; /* Altura fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o conteúdo (título) na parte inferior */
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent; /* Borda transparente por padrão */
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Bordas coloridas para cada categoria */
+.category-card.yellow-border { border-color: #F1EF30; }
+.category-card.blue-border { border-color: #0CC0DF; }
+.category-card.pink-border { border-color: #FF6DC0; }
+
+.category-card:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+}
+
+.category-content {
+    /* Flexbox para centralizar o texto/ícone dentro do card se necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ocupa a largura total do card */
+}
+
+.category-title {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.2em;
+    color: #333; /* Cor do texto da categoria */
+    margin-top: 10px; /* Espaço entre o conteúdo e o título */
+}
+
+/* ========================================================= */
+/* Ícone de Acessibilidade (mantém o mesmo estilo) */
+/* ========================================================= */
+.accessibility-icon {
+    position: fixed; /* Fixo na viewport */
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0CC0DF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 2.2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Garante que fique acima de tudo */
+}
+
+.accessibility-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================================= */
+/* Responsividade */
+/* ========================================================= */
+@media (max-width: 1024px) {
+    .main-header {
+        padding: 10px 20px;
+    }
+
+    .nav-item {
+        font-size: 1.1em;
+        padding: 4px 8px;
+    }
+
+    .home-content {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .main-content-box {
+        width: 90%;
+        min-height: 180px; /* Ajuste para o tamanho visual da imagem */
+    }
+
+    .top-box {
+        min-height: 200px;
+    }
+
+    .bottom-box {
+        min-height: 150px;
+    }
+
+    .small-indicator {
+        width: 50px;
+        height: 10px;
+    }
+
+    .product-categories {
+        gap: 20px;
+    }
+
+    .category-card {
+        width: 250px;
+        height: 200px;
+        padding: 15px;
+    }
+
+    .category-title {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column; /* Empilha logo e navegação */
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .main-nav {
+        gap: 15px; /* Menor espaço entre os itens de navegação */
+        flex-wrap: wrap; /* Permite que os links quebrem a linha */
+        justify-content: center;
+    }
+
+    .nav-item {
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+
+    .home-content {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .main-content-box {
+        width: 95%;
+        min-height: 150px;
+    }
+
+    .top-box {
+        min-height: 180px;
+    }
+
+    .bottom-box {
+        min-height: 120px;
+    }
+
+    .small-indicators-group {
+        gap: 10px;
+    }
+
+    .small-indicator {
+        width: 40px;
+        height: 8px;
+    }
+
+    .product-categories {
+        flex-direction: column; /* Empilha os cards de categoria */
+        align-items: center; /* Centraliza os cards empilhados */
+        gap: 15px;
+    }
+
+    .category-card {
+        width: 90%; /* Ocupa mais largura em telas pequenas */
+        max-width: 300px; /* Limita a largura em telas muito pequenas */
+        height: 180px;
+        padding: 15px;
+    }
+
+    .category-title {
+        font-size: 1em;
+    }
+
+    .accessibility-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8em;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .header-logo {
+        width: 120px;
+    }
+
+    .nav-item {
+        font-size: 0.9em;
+        padding: 3px 6px;
+    }
+
+    .home-content {
+        padding: 15px 5px;
+        gap: 10px;
+    }
+
+    .main-content-box {
+        min-height: 120px;
+    }
+
+    .top-box {
+        min-height: 150px;
+    }
+
+    .bottom-box {
+        min-height: 100px;
+    }
+
+    .small-indicators-group {
+        gap: 8px;
+    }
+
+    .small-indicator {
+        width: 30px;
+        height: 6px;
+    }
+
+    .product-categories {
+        gap: 10px;
+    }
+
+    .category-card {
+        width: 95%;
+        height: 160px;
+        padding: 10px;
+    }
+
+    .category-title {
+        font-size: 0.9em;
+    }
+
+    .accessibility-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5em;
+        bottom: 10px;
+        right: 10px;
+    }
+}

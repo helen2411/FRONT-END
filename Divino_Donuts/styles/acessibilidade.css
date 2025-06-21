@@ -1,0 +1,366 @@
+/* Importação de fontes */
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
+
+/* ========================================================= */
+/* Estilos Globais e Reset Básico */
+/* ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0; /* Fundo padrão */
+    overflow-x: hidden;
+}
+
+/* ========================================================= */
+/* Layout Principal da Página de Acessibilidade */
+/* ========================================================= */
+.accessibility-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #E0FFFF; /* Fundo azul claro */
+    position: relative;
+    padding-bottom: 80px; /* Espaço para o ícone de acessibilidade */
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+}
+
+/* ========================================================= */
+/* Cabeçalho de Acessibilidade */
+/* ========================================================= */
+.accessibility-header {
+    position: fixed; /* Fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0CC0DF; /* Azul do cabeçalho */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start; /* Alinha o título e o menu à esquerda */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.accessibility-header .page-title-header { /* Título "Acessibilidade" no cabeçalho */
+    font-family: 'Jua', sans-serif;
+    font-size: 1.8em;
+    color: #FFFFFF;
+    flex-grow: 1; /* Permite que o título ocupe o espaço restante */
+    text-align: left;
+    margin-left: 10px; /* Espaço entre o menu e o título */
+}
+
+.accessibility-header .menu-toggle {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ========================================================= */
+/* Conteúdo Principal de Acessibilidade */
+/* ========================================================= */
+.accessibility-main-content {
+    flex-grow: 1;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espaço entre as seções */
+}
+
+.accessibility-section {
+    background-color: #FFFFFF; /* Fundo branco para cada seção */
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 90%;
+    max-width: 900px; /* Largura máxima para as seções */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha títulos e grid à esquerda */
+}
+
+.section-title {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.8em;
+    color: #0CC0DF; /* Azul turquesa para os títulos de seção */
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Colunas flexíveis */
+    gap: 15px; /* Espaço entre os botões */
+    width: 100%;
+    justify-content: center; /* Centraliza a grade */
+}
+
+.option-button {
+    background-color: #FF6DC0; /* Rosa dos botões de opção */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Jua', sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    height: 100px; /* Altura fixa para os botões */
+}
+
+.option-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.option-icon {
+    font-size: 2.2em; /* Tamanho dos ícones Font Awesome */
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+/* Estilo específico para o botão de Libras */
+.libras-button {
+    grid-column: span 1; /* Ocupa uma coluna, mas pode ser ajustado se for maior */
+    width: 100px; /* Largura menor para o botão Libras se ele for único */
+    height: 100px; /* Altura igual à largura */
+    border-radius: 50%; /* Faz o botão de Libras redondo */
+    padding: 0;
+    overflow: hidden; /* Garante que a imagem não vaze */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.libras-button .option-icon {
+    width: 80px; /* Tamanho da imagem do ícone Libras */
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Ajuste para o texto dentro dos botões quando há quebra de linha */
+.option-button span {
+    line-height: 1.2;
+}
+
+
+/* ========================================================= */
+/* Ícone de Acessibilidade (fixo no canto inferior direito) */
+/* ========================================================= */
+.accessibility-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0CC0DF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 2.2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.accessibility-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================================= */
+/* Responsividade */
+/* ========================================================= */
+@media (max-width: 992px) {
+    .accessibility-main-content {
+        padding: 25px 15px;
+        gap: 25px;
+    }
+
+    .accessibility-section {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .section-title {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    .options-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 12px;
+    }
+
+    .option-button {
+        font-size: 0.85em;
+        height: 90px;
+        padding: 12px 8px;
+    }
+
+    .option-icon {
+        font-size: 2em;
+    }
+
+    .libras-button {
+        width: 90px;
+        height: 90px;
+    }
+    .libras-button .option-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .accessibility-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .accessibility-page-wrapper {
+        padding-top: 70px;
+    }
+    .accessibility-header {
+        padding: 10px 15px;
+    }
+    .accessibility-header .page-title-header {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+    .accessibility-header .menu-toggle {
+        font-size: 1.5em;
+    }
+
+    .accessibility-main-content {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .accessibility-section {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    .options-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Reduz o minmax */
+        gap: 10px;
+    }
+
+    .option-button {
+        font-size: 0.8em;
+        height: 80px;
+        padding: 10px 6px;
+    }
+
+    .option-icon {
+        font-size: 1.8em;
+    }
+
+    .libras-button {
+        width: 80px;
+        height: 80px;
+    }
+    .libras-button .option-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .accessibility-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8em;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .accessibility-page-wrapper {
+        padding-top: 60px;
+    }
+    .accessibility-header {
+        padding: 8px 10px;
+    }
+    .accessibility-header .page-title-header {
+        font-size: 1.3em;
+        margin-left: 8px;
+    }
+    .accessibility-header .menu-toggle {
+        font-size: 1.3em;
+    }
+
+    .accessibility-main-content {
+        padding: 15px 8px;
+        gap: 15px;
+    }
+
+    .accessibility-section {
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+    }
+
+    .options-grid {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Mais redução */
+        gap: 8px;
+    }
+
+    .option-button {
+        font-size: 0.75em;
+        height: 70px;
+        padding: 8px 5px;
+        border-radius: 12px;
+    }
+
+    .option-icon {
+        font-size: 1.6em;
+        margin-bottom: 3px;
+    }
+
+    .libras-button {
+        width: 70px;
+        height: 70px;
+    }
+    .libras-button .option-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .accessibility-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5em;
+        bottom: 10px;
+        right: 10px;
+    }
+}

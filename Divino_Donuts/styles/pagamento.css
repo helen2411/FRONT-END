@@ -1,0 +1,364 @@
+/* Importação de fontes */
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
+
+/* ========================================================= */
+/* Estilos Globais e Reset Básico */
+/* ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0; /* Fundo padrão */
+    overflow-x: hidden;
+}
+
+/* ========================================================= */
+/* Layout Principal da Página de Pagamento */
+/* ========================================================= */
+.payment-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #E0FFFF; /* Fundo azul claro */
+    position: relative;
+    padding-bottom: 80px; /* Espaço para o ícone de acessibilidade */
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+}
+
+/* ========================================================= */
+/* Cabeçalho de Pagamento */
+/* ========================================================= */
+.payment-header {
+    position: fixed; /* Fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0CC0DF; /* Azul do cabeçalho */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start; /* Alinha o menu e o título à esquerda */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.payment-header .menu-toggle {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 20px; /* Espaço entre o menu e o título */
+}
+
+.payment-header .page-title-header { /* Título "Formas De Pagamento" no cabeçalho */
+    font-family: 'Jua', sans-serif;
+    font-size: 1.8em;
+    color: #FFFFFF;
+    flex-grow: 1; /* Permite que o título ocupe o espaço restante */
+    text-align: left;
+}
+
+
+/* ========================================================= */
+/* Conteúdo Principal de Pagamento */
+/* ========================================================= */
+.payment-main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centraliza o container de pagamento */
+    align-items: center; /* Centraliza verticalmente o container */
+    padding: 30px 20px;
+}
+
+.payment-container {
+    background-color: #0CC0DF; /* Cor turquesa do container principal */
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px; /* Largura máxima do card */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos internos */
+    gap: 20px; /* Espaço entre os elementos internos */
+}
+
+.section-title {
+    font-family: 'Jua', sans-serif;
+    font-size: 2em;
+    color: #FFFFFF; /* Cor do título "Formas de Pagamento" dentro do card */
+    margin-bottom: 10px;
+}
+
+.payment-options-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre as opções de pagamento */
+}
+
+/* ========================================================= */
+/* Opções de Pagamento (Cartões/Pix) */
+/* ========================================================= */
+.payment-option-card {
+    background-color: #F1EF30; /* Amarelo das opções */
+    border-radius: 50px; /* Bordas arredondadas */
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative; /* Para posicionar o rádio customizado */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.payment-option-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.payment-option-card input[type="radio"] {
+    /* Esconde o rádio button padrão */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-radio {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FFF; /* Círculo branco do rádio button */
+    border: 2px solid #0CC0DF; /* Borda azul */
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    flex-shrink: 0; /* Não encolhe */
+}
+
+/* Estado "checked" para o rádio customizado */
+.payment-option-card input[type="radio"]:checked + .custom-radio::after {
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #FF6DC0; /* Bola rosa dentro do rádio */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.method-details {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre ícone e nome */
+    flex-grow: 1; /* Permite que os detalhes ocupem o espaço restante */
+}
+
+.method-icon {
+    width: 40px; /* Tamanho dos ícones de pagamento */
+    height: auto;
+    object-fit: contain;
+}
+
+.method-name {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3em;
+    color: #333; /* Cor do texto do nome do método */
+}
+
+/* ========================================================= */
+/* Botão "Outras Formas de Pagamento" */
+/* ========================================================= */
+.other-payment-button {
+    background-color: #FF6DC0; /* Rosa do botão */
+    color: #FFFFFF;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço acima do botão */
+    width: 90%; /* Largura do botão */
+    max-width: 400px;
+}
+
+.other-payment-button:hover {
+    background-color: #e05bb0; /* Escurece no hover */
+}
+
+/* ========================================================= */
+/* Ícone de Acessibilidade (fixo no canto inferior direito) */
+/* ========================================================= */
+.accessibility-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0CC0DF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 2.2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.accessibility-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================================= */
+/* Responsividade */
+/* ========================================================= */
+@media (max-width: 768px) {
+    .payment-page-wrapper {
+        padding-top: 70px;
+    }
+    .payment-header {
+        padding: 10px 15px;
+    }
+    .payment-header .menu-toggle {
+        font-size: 1.5em;
+        margin-right: 15px;
+    }
+    .payment-header .page-title-header {
+        font-size: 1.5em;
+    }
+
+    .payment-main-content {
+        padding: 20px 15px;
+    }
+
+    .payment-container {
+        width: 95%;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .payment-option-card {
+        padding: 8px 20px;
+    }
+
+    .custom-radio {
+        width: 22px;
+        height: 22px;
+        margin-right: 12px;
+    }
+
+    .payment-option-card input[type="radio"]:checked + .custom-radio::after {
+        width: 11px;
+        height: 11px;
+    }
+
+    .method-icon {
+        width: 35px;
+    }
+
+    .method-name {
+        font-size: 1.2em;
+    }
+
+    .other-payment-button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+        width: 95%;
+    }
+
+    .accessibility-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-page-wrapper {
+        padding-top: 60px;
+    }
+    .payment-header {
+        padding: 8px 10px;
+    }
+    .payment-header .menu-toggle {
+        font-size: 1.3em;
+        margin-right: 10px;
+    }
+    .payment-header .page-title-header {
+        font-size: 1.3em;
+    }
+
+    .payment-main-content {
+        padding: 15px 10px;
+    }
+
+    .payment-container {
+        width: 98%;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .payment-option-card {
+        padding: 6px 15px;
+        border-radius: 40px;
+    }
+
+    .custom-radio {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .payment-option-card input[type="radio"]:checked + .custom-radio::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .method-icon {
+        width: 30px;
+    }
+
+    .method-name {
+        font-size: 1.1em;
+    }
+
+    .other-payment-button {
+        font-size: 1em;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .accessibility-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5em;
+        bottom: 10px;
+        right: 10px;
+    }
+}

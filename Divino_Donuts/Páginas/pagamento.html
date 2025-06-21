@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Divino Donuts - Formas de Pagamento</title>
+    <link rel="stylesheet" href="../styles/pagamento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <h1>Pagamento</h1>
-    
+    <div class="payment-page-wrapper">
+        <a href="#" class="accessibility-icon" aria-label="Acessibilidade">
+            <i class="fas fa-wheelchair"></i>
+        </a>
+
+        <header class="payment-header">
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="page-title-header">Formas De Pagamento</h1>
+        </header>
+
+        <main class="payment-main-content">
+            <div class="payment-container">
+                <h2 class="section-title">Formas de Pagamento</h2>
+
+                <form class="payment-options-form">
+                    <label class="payment-option-card">
+                        <input type="radio" name="payment_method" value="pix" checked>
+                        <span class="custom-radio"></span>
+                        <div class="method-details">
+                            <img src="images/pix-icon.png" alt="Pix Icon" class="method-icon">
+                            <span class="method-name">Pix</span>
+                        </div>
+                    </label>
+
+                    <label class="payment-option-card">
+                        <input type="radio" name="payment_method" value="mastercard">
+                        <span class="custom-radio"></span>
+                        <div class="method-details">
+                            <img src="images/mastercard-icon.png" alt="Mastercard Icon" class="method-icon">
+                            <span class="method-name">Mastercard</span>
+                        </div>
+                    </label>
+
+                    <label class="payment-option-card">
+                        <input type="radio" name="payment_method" value="visa">
+                        <span class="custom-radio"></span>
+                        <div class="method-details">
+                            <img src="images/visa-icon.png" alt="Visa Icon" class="method-icon">
+                            <span class="method-name">Visa</span>
+                        </div>
+                    </label>
+                </form>
+
+                <button class="other-payment-button">Outras formas de pagamento</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts/pagamento.js"></script>
 </body>
 </html>

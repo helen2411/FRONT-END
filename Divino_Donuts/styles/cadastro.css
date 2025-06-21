@@ -1,0 +1,205 @@
+/* Importação de fontes (já no HTML, mas bom para referência) */
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
+
+/* ========================================================= */
+/* Estilos Globais e Reset Básico */
+/* ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Fonte padrão para textos */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0; /* Cor de fallback caso a imagem não carregue */
+    overflow: hidden; /* Para garantir que o fundo ocupe toda a tela sem barras de rolagem */
+}
+
+/* ========================================================= */
+/* Layout Principal da Página de Cadastro (mesmo do login para consistência) */
+/* ========================================================= */
+.register-page-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o cartão de cadastro */
+    align-items: center; /* Centraliza verticalmente o cartão de cadastro */
+    min-height: 100vh; /* Garante que o wrapper ocupe a altura total da viewport */
+    width: 100vw; /* Garante que o wrapper ocupe a largura total da viewport */
+    background: url('images/donut-background.jpg') no-repeat center center / cover; /* Imagem de fundo */
+    position: relative; /* Para posicionar o ícone de acessibilidade */
+    padding: 20px; /* Padding para garantir que não encoste nas bordas em telas menores */
+}
+
+/* ========================================================= */
+/* Cartão de Cadastro */
+/* ========================================================= */
+.register-card-container {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border-radius: 50px; /* Bordas arredondadas conforme a imagem */
+    padding: 40px 50px; /* Espaçamento interno generoso */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center;
+    max-width: 600px; /* Largura máxima para o cartão */
+    width: 90%; /* Adapta-se a telas menores */
+    display: flex; /* Para centralizar o form e o logo verticalmente */
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro do cartão */
+    width: 100%; /* Ocupa a largura total do container */
+}
+
+.register-logo { /* Logo na parte inferior do cartão de cadastro */
+    width: 250px; /* Ajuste conforme o tamanho real da sua imagem de logo */
+    height: auto;
+    margin-top: 40px; /* Espaço acima do logo */
+}
+
+/* ========================================================= */
+/* Formulário de Cadastro */
+/* ========================================================= */
+.register-form {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 20px; /* Espaço entre os campos de input */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas como na imagem */
+    background-color: #FF6DC0; /* Cor rosa dos campos */
+    color: #FFF; /* Cor do texto digitado */
+    font-family: 'Jua', sans-serif; /* Fonte para o texto do input */
+    font-size: 1.1em;
+    outline: none; /* Remove a borda de foco padrão */
+    text-align: center; /* Centraliza o placeholder/texto */
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Cor do placeholder */
+    font-family: 'Jua', sans-serif;
+}
+
+.register-button {
+    width: 60%; /* Largura do botão Cadastrar */
+    padding: 15px 30px;
+    background-color: #F1EF30; /* Cor amarela do botão */
+    border: none;
+    border-radius: 50px;
+    color: #0CC0DF; /* Cor do texto "Cadastrar" */
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+.register-button:hover {
+    background-color: #e0de2f; /* Escurece um pouco no hover */
+}
+
+/* ========================================================= */
+/* Ícone de Acessibilidade (mantém o mesmo estilo do login) */
+/* ========================================================= */
+.accessibility-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0CC0DF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 2.2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+.accessibility-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================================= */
+/* Responsividade Básica (Adaptado para o formulário de cadastro) */
+/* ========================================================= */
+@media (max-width: 768px) {
+    .register-card-container {
+        padding: 30px 40px;
+        max-width: 90%;
+    }
+
+    .register-logo {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .input-group {
+        margin-bottom: 15px; /* Reduz espaço entre inputs */
+    }
+
+    .input-group input {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    .register-button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    .accessibility-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-card-container {
+        padding: 20px 30px;
+        border-radius: 30px;
+    }
+
+    .register-logo {
+        width: 180px;
+        margin-top: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 10px; /* Mais redução de espaço */
+    }
+
+    .input-group input {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+
+    .register-button {
+        width: 80%;
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .accessibility-icon {
+        bottom: 10px;
+        right: 10px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.5em;
+    }
+}
