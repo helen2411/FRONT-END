@@ -14,8 +14,10 @@ body {
     font-family: 'Inter', sans-serif; /* Fonte padrão para textos */
     line-height: 1.6;
     color: #333;
-    background-color: #f0f0f0; /* Cor de fallback caso a imagem não carregue */
+    background-image: url(../img/cadastro.png); /* Cor de fallback caso a imagem não carregue */
     overflow: hidden; /* Para garantir que o fundo ocupe toda a tela sem barras de rolagem */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ========================================================= */
@@ -29,16 +31,17 @@ body {
     width: 100vw; /* Garante que o wrapper ocupe a largura total da viewport */
     background: url('images/donut-background.jpg') no-repeat center center / cover; /* Imagem de fundo */
     position: relative; /* Para posicionar o ícone de acessibilidade */
-    padding: 20px; /* Padding para garantir que não encoste nas bordas em telas menores */
+    padding: auto ; /* Padding para garantir que não encoste nas bordas em telas menores */
 }
 
 /* ========================================================= */
 /* Cartão de Cadastro */
 /* ========================================================= */
 .register-card-container {
-    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    background: #0CC0DF; /* Fundo branco semi-transparente */
+    border:5px solid white;
     border-radius: 50px; /* Bordas arredondadas conforme a imagem */
-    padding: 40px 50px; /* Espaçamento interno generoso */
+    padding: 0px 50px; /* Espaçamento interno generoso */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
     text-align: center;
     max-width: 600px; /* Largura máxima para o cartão */
@@ -46,6 +49,7 @@ body {
     display: flex; /* Para centralizar o form e o logo verticalmente */
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
 .register-card {
@@ -58,7 +62,7 @@ body {
 .register-logo { /* Logo na parte inferior do cartão de cadastro */
     width: 250px; /* Ajuste conforme o tamanho real da sua imagem de logo */
     height: auto;
-    margin-top: 40px; /* Espaço acima do logo */
+    margin-top: 0px; /* Espaço acima do logo */
 }
 
 /* ========================================================= */
@@ -75,7 +79,7 @@ body {
 .input-group input {
     width: 100%;
     padding: 15px 25px;
-    border: none;
+    border:3px solid white;
     border-radius: 50px; /* Bordas arredondadas como na imagem */
     background-color: #FF6DC0; /* Cor rosa dos campos */
     color: #FFF; /* Cor do texto digitado */
@@ -83,6 +87,7 @@ body {
     font-size: 1.1em;
     outline: none; /* Remove a borda de foco padrão */
     text-align: center; /* Centraliza o placeholder/texto */
+    margin-top: 8px;
 }
 
 .input-group input::placeholder {
@@ -90,11 +95,11 @@ body {
     font-family: 'Jua', sans-serif;
 }
 
-.register-button {
+.cad-button {
     width: 60%; /* Largura do botão Cadastrar */
     padding: 15px 30px;
     background-color: #F1EF30; /* Cor amarela do botão */
-    border: none;
+    border:3px solid white;
     border-radius: 50px;
     color: #0CC0DF; /* Cor do texto "Cadastrar" */
     font-family: 'Jua', sans-serif;
@@ -105,7 +110,7 @@ body {
     margin-top: 10px; /* Espaço acima do botão */
 }
 
-.register-button:hover {
+.cad-button:hover {
     background-color: #e0de2f; /* Escurece um pouco no hover */
 }
 
@@ -145,7 +150,7 @@ body {
 
     .register-logo {
         width: 200px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .input-group {
@@ -157,7 +162,7 @@ body {
         padding: 12px 20px;
     }
 
-    .register-button {
+    .cad-button {
         font-size: 1.1em;
         padding: 12px 25px;
     }

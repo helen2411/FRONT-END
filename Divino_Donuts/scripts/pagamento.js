@@ -40,3 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
     //     document.querySelector('input[name="payment_method"][value="pix"]').checked = true;
     // }
 });
+

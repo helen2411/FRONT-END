@@ -20,6 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Botão Login
+
+     // Seleciona o botão pelo seu ID
+        const loginButton = document.getElementById('loginButton');
+
+        // Adiciona um ouvinte de evento para 'click'
+        loginButton.addEventListener('click', function() {
+            // Redireciona para a página 'dashboard.html'
+            // Substitua 'dashboard.html' pela URL da sua página de destino
+            window.location.href = 'http://127.0.0.1:5500/P%C3%A1ginas/home.html';
+            // Ou para uma URL externa: window.location.href = 'https://www.seusite.com/dashboard';
+        });
+
     // Exemplo de evento para o ícone de acessibilidade (apenas um alerta simples)
     const accessibilityIcon = document.querySelector('.accessibility-icon');
     accessibilityIcon.addEventListener('click', (event) => {
@@ -38,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Exemplo para o link de cadastro
-    document.querySelector('.register-link').addEventListener('click', (event) => {
+    document.querySelector('C:\Users\helen\AppData\Local\GitHubDesktop\app-3.4.1\FRONT-END\Divino_Donuts\Páginas\cadastro.html').addEventListener('click', (event) => {
         event.preventDefault();
         alert('Redirecionando para a página de Cadastro!');
         // window.location.href = 'register.html';

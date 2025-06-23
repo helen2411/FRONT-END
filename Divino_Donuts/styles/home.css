@@ -14,8 +14,10 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f0f0f0; /* Cor de fallback */
+    background-image: url(../img/home.png); /* Cor de fallback */
     overflow-x: hidden; /* Evita rolagem horizontal */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ========================================================= */
@@ -45,7 +47,7 @@ body {
 }
 
 .header-logo {
-    width: 150px; /* Tamanho do logo */
+    width: 100px; /* Tamanho do logo */
     height: auto;
 }
 
@@ -65,8 +67,8 @@ body {
 }
 
 .nav-item:hover {
-    color: #FF6DC0; /* Cor rosa no hover */
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #F1EF30; /* Cor rosa no hover */
+    /* background-color: rgba(4, 184, 255, 0.2); */
 }
 
 /* ========================================================= */

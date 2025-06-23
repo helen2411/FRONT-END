@@ -13,9 +13,11 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f0f0f0; /* Fundo padrão */
+    /* color: #333; */
+    background-image: url(../img/produtos.png); /* Fundo padrão */
     overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: over;
 }
 
 /* ========================================================= */
@@ -26,7 +28,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100vw;
-    background-color: #E0FFFF; /* Um azul claro para o fundo da página, como na imagem */
     position: relative;
     padding-bottom: 80px; /* Espaço para o ícone de acessibilidade */
     padding-top: 100px; /* Espaço para o cabeçalho fixo */
