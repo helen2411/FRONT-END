@@ -1,9 +1,9 @@
 /* Importação de fontes (já no HTML, mas bom para referência) */
 /* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
 
-/* ========================================================= */
+
 /* Estilos Globais e Reset Básico */
-/* ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +20,9 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ========================================================= */
+
 /* Layout Principal da Página (Home) */
-/* ========================================================= */
+
 .home-page-wrapper {
     display: flex;
     flex-direction: column; /* Organiza os elementos verticalmente */
@@ -33,13 +33,14 @@ body {
     padding-bottom: 80px; /* Espaço para o ícone de acessibilidade */
 }
 
-/* ========================================================= */
+
 /* Cabeçalho */
-/* ========================================================= */
+
 .main-header {
     width: 100%;
     background-color: #0CC0DF; /* Azul do cabeçalho */
-    padding: 15px 30px;
+    padding: 5px 30px 0px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: space-between; /* Espaço entre logo e navegação */
     align-items: center;
@@ -49,6 +50,8 @@ body {
 .header-logo {
     width: 100px; /* Tamanho do logo */
     height: auto;
+    margin-top: 0px;/* Espaço acima da logo */
+    margin-bottom: 0px; /* Espaço abaixo da logo */
 }
 
 .main-nav {
@@ -71,9 +74,9 @@ body {
     /* background-color: rgba(4, 184, 255, 0.2); */
 }
 
-/* ========================================================= */
+
 /* Conteúdo Principal da Home */
-/* ========================================================= */
+
 .home-content {
     flex-grow: 1; /* Permite que ocupe o espaço restante */
     display: flex;
@@ -122,9 +125,9 @@ body {
     background-color: #FF6DC0; /* O primeiro indicador é rosa */
 }
 
-/* ========================================================= */
+
 /* Seção de Categorias de Produtos */
-/* ========================================================= */
+
 .product-categories {
     display: flex;
     justify-content: center; /* Centraliza os cards de categoria */
@@ -176,9 +179,9 @@ body {
     margin-top: 10px; /* Espaço entre o conteúdo e o título */
 }
 
-/* ========================================================= */
-/* Ícone de Acessibilidade (mantém o mesmo estilo) */
-/* ========================================================= */
+
+/* Ícone de Acessibilidade  */
+
 .accessibility-icon {
     position: fixed; /* Fixo na viewport */
     bottom: 20px;
@@ -201,12 +204,12 @@ body {
     transform: scale(1.1);
 }
 
-/* ========================================================= */
+
 /* Responsividade */
-/* ========================================================= */
+
 @media (max-width: 1024px) {
     .main-header {
-        padding: 10px 20px;
+        padding: 10px 20px 0px;
     }
 
     .nav-item {
@@ -331,6 +334,8 @@ body {
 
     .header-logo {
         width: 120px;
+        margin-top: 0px;/* Espaço acima da logo */
+        margin-bottom: 0px; /* Espaço abaixo da logo */
     }
 
     .nav-item {

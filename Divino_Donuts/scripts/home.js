@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const accessibilityIcon = document.querySelector('.accessibility-icon');
     accessibilityIcon.addEventListener('click', (event) => {
         event.preventDefault();
-        alert('Funcionalidades de Acessibilidade seriam ativadas aqui!');
+        // alert('Funcionalidades de Acessibilidade seriam ativadas aqui!');
+         window.location.href = 'http://127.0.0.1:5501/P%C3%A1ginas/acessibilidade.html'; // Substitua 'accessibility.html' pelo nome real da sua página
     });
 
     // Exemplo de evento para os cards de categoria

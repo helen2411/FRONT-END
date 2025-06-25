@@ -95,8 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Evento para o ícone de acessibilidade (inferior direito)
     accessibilityIcon.addEventListener('click', (event) => {
         event.preventDefault();
-        alert('Você já está na página de Acessibilidade!');
+        // alert('Você já está na página de Acessibilidade!');
         // Se a página de acessibilidade fosse um modal, aqui fecharia/abriria o modal.
+         window.location.href = 'http://127.0.0.1:5501/P%C3%A1ginas/acessibilidade.html'; // Substitua 'accessibility.html' pelo nome real da sua página
     });
 
     // Evento para o botão de menu (no cabeçalho)

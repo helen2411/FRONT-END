@@ -1,9 +1,7 @@
 /* Importação de fontes */
 /* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
 
-/* ========================================================= */
-/* Estilos Globais e Reset Básico */
-/* ========================================================= */
+/* Estilos Globais */
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +15,10 @@ body {
     background-image: url(../img/produtos.png); /* Fundo padrão */
     overflow-x: hidden;
     background-repeat: no-repeat;
-    background-size: over;
+    background-size: cover;
 }
 
-/* ========================================================= */
-/* Layout Principal da Página de Produtos */
-/* ========================================================= */
+/* Layout principal */
 .products-page-wrapper {
     display: flex;
     flex-direction: column;
@@ -33,9 +29,7 @@ body {
     padding-top: 100px; /* Espaço para o cabeçalho fixo */
 }
 
-/* ========================================================= */
-/* Cabeçalho de Produtos */
-/* ========================================================= */
+/* Cabeçalho */
 .products-header {
     position: fixed; /* Fixo no topo */
     top: 0;
@@ -90,9 +84,7 @@ body {
     padding: 5px;
 }
 
-/* ========================================================= */
-/* Conteúdo Principal (Título, Filtros, Grade) */
-/* ========================================================= */
+/* Título, Filtros, Grades */
 .products-main-content {
     flex-grow: 1;
     padding: 20px;
@@ -109,9 +101,7 @@ body {
     text-align: center;
 }
 
-/* ========================================================= */
 /* Filtros de Categoria */
-/* ========================================================= */
 .category-filters {
     display: flex;
     justify-content: center;
@@ -132,18 +122,18 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.filter-button.yellow-border { background-color: #F1EF30; } /* Amarelo */
-.filter-button.blue-border { background-color: #0CC0DF; } /* Azul */
-.filter-button.pink-border { background-color: #FF6DC0; } /* Rosa */
+.filter-button.yellow-border { background-color: #F1EF30; } 
+.filter-button.blue-border { background-color: #0CC0DF; } 
+.filter-button.pink-border { background-color: #FF6DC0; } 
 
 .filter-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* ========================================================= */
+
 /* Grade de Produtos (CSS Grid!) */
-/* ========================================================= */
+
 .product-grid {
     display: grid;
     /* 5 colunas para telas grandes, com auto-fit para responsividade */
@@ -197,9 +187,9 @@ body {
     background-color: #e0de2f; /* Escurece um pouco no hover */
 }
 
-/* ========================================================= */
-/* Ícone de Acessibilidade (fixo no canto inferior direito) */
-/* ========================================================= */
+
+/* Ícone de Acessibilidade */
+
 .accessibility-icon {
     position: fixed;
     bottom: 20px;
@@ -222,9 +212,9 @@ body {
     transform: scale(1.1);
 }
 
-/* ========================================================= */
+
 /* Responsividade */
-/* ========================================================= */
+
 @media (max-width: 1200px) {
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Reduz o minmax */

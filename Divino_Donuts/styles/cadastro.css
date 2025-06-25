@@ -1,9 +1,9 @@
 /* Importação de fontes (já no HTML, mas bom para referência) */
 /* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
 
-/* ========================================================= */
+
 /* Estilos Globais e Reset Básico */
-/* ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,14 +15,15 @@ body {
     line-height: 1.6;
     color: #333;
     background-image: url(../img/cadastro.png); /* Cor de fallback caso a imagem não carregue */
-    overflow: hidden; /* Para garantir que o fundo ocupe toda a tela sem barras de rolagem */
-    background-repeat: no-repeat;
+    /* Para garantir que o fundo ocupe toda a tela sem barras de rolagem use = overflow: hidden; */
     background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
-/* ========================================================= */
+
 /* Layout Principal da Página de Cadastro (mesmo do login para consistência) */
-/* ========================================================= */
+
 .register-page-wrapper {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente o cartão de cadastro */
@@ -31,25 +32,27 @@ body {
     width: 100vw; /* Garante que o wrapper ocupe a largura total da viewport */
     background: url('images/donut-background.jpg') no-repeat center center / cover; /* Imagem de fundo */
     position: relative; /* Para posicionar o ícone de acessibilidade */
-    padding: auto ; /* Padding para garantir que não encoste nas bordas em telas menores */
+    padding: 20px ; /* Padding para garantir que não encoste nas bordas em telas menores */
 }
 
-/* ========================================================= */
+
 /* Cartão de Cadastro */
-/* ========================================================= */
+
 .register-card-container {
     background: #0CC0DF; /* Fundo branco semi-transparente */
     border:5px solid white;
     border-radius: 50px; /* Bordas arredondadas conforme a imagem */
-    padding: 0px 50px; /* Espaçamento interno generoso */
+    padding: 40px 50px 0px; /* Espaçamento interno generoso */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
     text-align: center;
-    max-width: 600px; /* Largura máxima para o cartão */
-    width: 90%; /* Adapta-se a telas menores */
+    max-width: 420px; /* Largura máxima para o cartão */
+    width: 80%; /* Adapta-se a telas menores */
+    max-height: 700 px;
     display: flex; /* Para centralizar o form e o logo verticalmente */
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    
 }
 
 .register-card {
@@ -60,14 +63,16 @@ body {
 }
 
 .register-logo { /* Logo na parte inferior do cartão de cadastro */
-    width: 250px; /* Ajuste conforme o tamanho real da sua imagem de logo */
+    width: 190px; /* Ajuste conforme o tamanho real da sua imagem de logo */
     height: auto;
-    margin-top: 0px; /* Espaço acima do logo */
+    margin-top: 10px; /* Espaço acima do logo */
+    margin-bottom: 0px; /* Espaço abaixo do logo */
+
 }
 
-/* ========================================================= */
+
 /* Formulário de Cadastro */
-/* ========================================================= */
+
 .register-form {
     width: 100%;
 }
@@ -108,15 +113,16 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px; /* Espaço acima do botão */
+    
 }
 
 .cad-button:hover {
     background-color: #e0de2f; /* Escurece um pouco no hover */
 }
 
-/* ========================================================= */
+
 /* Ícone de Acessibilidade (mantém o mesmo estilo do login) */
-/* ========================================================= */
+
 .accessibility-icon {
     position: absolute;
     bottom: 20px;
@@ -139,9 +145,9 @@ body {
     transform: scale(1.1);
 }
 
-/* ========================================================= */
+
 /* Responsividade Básica (Adaptado para o formulário de cadastro) */
-/* ========================================================= */
+
 @media (max-width: 768px) {
     .register-card-container {
         padding: 30px 40px;
@@ -150,7 +156,8 @@ body {
 
     .register-logo {
         width: 200px;
-        margin-top: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px; /* Espaço abaixo do logo */
     }
 
     .input-group {
@@ -181,8 +188,9 @@ body {
     }
 
     .register-logo {
-        width: 180px;
+        width: 50px;
         margin-top: 20px;
+        margin-bottom: 0px; /* Espaço abaixo do logo */
     }
 
     .input-group {

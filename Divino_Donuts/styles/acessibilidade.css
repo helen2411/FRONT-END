@@ -1,9 +1,9 @@
 /* Importação de fontes */
 /* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
 
-/* ========================================================= */
+
 /* Estilos Globais e Reset Básico */
-/* ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +18,9 @@ body {
     overflow-x: hidden;
 }
 
-/* ========================================================= */
+
 /* Layout Principal da Página de Acessibilidade */
-/* ========================================================= */
+
 .accessibility-page-wrapper {
     display: flex;
     flex-direction: column;
@@ -32,9 +32,9 @@ body {
     padding-top: 80px; /* Espaço para o cabeçalho fixo */
 }
 
-/* ========================================================= */
+
 /* Cabeçalho de Acessibilidade */
-/* ========================================================= */
+
 .accessibility-header {
     position: fixed; /* Fixo no topo */
     top: 0;
@@ -67,9 +67,9 @@ body {
     padding: 5px;
 }
 
-/* ========================================================= */
+
 /* Conteúdo Principal de Acessibilidade */
-/* ========================================================= */
+
 .accessibility-main-content {
     flex-grow: 1;
     padding: 30px 20px;
@@ -163,9 +163,9 @@ body {
 }
 
 
-/* ========================================================= */
-/* Ícone de Acessibilidade (fixo no canto inferior direito) */
-/* ========================================================= */
+
+/* Ícone de Acessibilidade */
+
 .accessibility-icon {
     position: fixed;
     bottom: 20px;
@@ -188,9 +188,9 @@ body {
     transform: scale(1.1);
 }
 
-/* ========================================================= */
+
 /* Responsividade */
-/* ========================================================= */
+
 @media (max-width: 992px) {
     .accessibility-main-content {
         padding: 25px 15px;

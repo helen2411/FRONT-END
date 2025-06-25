@@ -37,8 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const accessibilityIcon = document.querySelector('.accessibility-icon');
     accessibilityIcon.addEventListener('click', (event) => {
         event.preventDefault(); // Impede o comportamento padrão de link
-        alert('Funcionalidades de Acessibilidade seriam ativadas aqui!');
-        // Poderia abrir um modal de acessibilidade, mudar contraste, etc.
+        // alert('Funcionalidades de Acessibilidade seriam ativadas aqui!');
+         window.location.href = 'http://127.0.0.1:5501/P%C3%A1ginas/acessibilidade.html'; // Substitua 'accessibility.html' pelo nome real da sua página
+       
     });
 
     // Exemplo para botões sociais (apenas logs)

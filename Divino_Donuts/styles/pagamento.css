@@ -1,9 +1,8 @@
 /* Importação de fontes */
 /* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
 
-/* ========================================================= */
+
 /* Estilos Globais e Reset Básico */
-/* ========================================================= */
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +17,9 @@ body {
     overflow-x: hidden;
 }
 
-/* ========================================================= */
-/* Layout Principal da Página de Pagamento */
-/* ========================================================= */
+
+/* Layout Principal */
+
 .payment-page-wrapper {
     display: flex;
     flex-direction: column;
@@ -32,9 +31,9 @@ body {
     padding-top: 80px; /* Espaço para o cabeçalho fixo */
 }
 
-/* ========================================================= */
-/* Cabeçalho de Pagamento */
-/* ========================================================= */
+
+/* Cabeçalho*/
+
 .payment-header {
     position: fixed; /* Fixo no topo */
     top: 0;
@@ -68,9 +67,8 @@ body {
 }
 
 
-/* ========================================================= */
-/* Conteúdo Principal de Pagamento */
-/* ========================================================= */
+/* Conteúdo Principal */
+
 .payment-main-content {
     flex-grow: 1;
     display: flex;
@@ -106,9 +104,8 @@ body {
     gap: 15px; /* Espaço entre as opções de pagamento */
 }
 
-/* ========================================================= */
 /* Opções de Pagamento (Cartões/Pix) */
-/* ========================================================= */
+
 .payment-option-card {
     background-color: #F1EF30; /* Amarelo das opções */
     border-radius: 50px; /* Bordas arredondadas */
@@ -179,9 +176,9 @@ body {
     color: #333; /* Cor do texto do nome do método */
 }
 
-/* ========================================================= */
+
 /* Botão "Outras Formas de Pagamento" */
-/* ========================================================= */
+
 .other-payment-button {
     background-color: #FF6DC0; /* Rosa do botão */
     color: #FFFFFF;
@@ -201,9 +198,9 @@ body {
     background-color: #e05bb0; /* Escurece no hover */
 }
 
-/* ========================================================= */
-/* Ícone de Acessibilidade (fixo no canto inferior direito) */
-/* ========================================================= */
+
+/* Ícone de Acessibilidade */
+
 .accessibility-icon {
     position: fixed;
     bottom: 20px;
@@ -226,9 +223,9 @@ body {
     transform: scale(1.1);
 }
 
-/* ========================================================= */
+
 /* Responsividade */
-/* ========================================================= */
+
 @media (max-width: 768px) {
     .payment-page-wrapper {
         padding-top: 70px;

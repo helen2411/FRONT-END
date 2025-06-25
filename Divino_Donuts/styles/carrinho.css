@@ -1,9 +1,9 @@
 /* Importação de fontes */
 /* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Inter:wght@400;700&display=swap'); */
 
-/* ========================================================= */
+
 /* Estilos Globais e Reset Básico */
-/* ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +18,9 @@ body {
     overflow-x: hidden;
 }
 
-/* ========================================================= */
-/* Layout Principal da Página do Carrinho */
-/* ========================================================= */
+
+/* Layout Principal da Página */
+
 .cart-page-wrapper {
     display: flex;
     flex-direction: column;
@@ -32,9 +32,9 @@ body {
     padding-top: 100px; /* Espaço para o cabeçalho fixo */
 }
 
-/* ========================================================= */
+
 /* Cabeçalho do Carrinho */
-/* ========================================================= */
+
 .cart-header {
     position: fixed; /* Fixo no topo */
     top: 0;
@@ -68,16 +68,16 @@ body {
     padding: 5px;
     margin-left: 15px; /* Espaço entre os ícones */
 }
-/* No seu design, o ícone do carrinho está mais à direita e o menu à esquerda do texto. */
-/* Podemos ajustar isso com o flexbox do header. */
+
+/* Ajuste de posição de icones*/
 .cart-header .menu-toggle { order: 0; margin-left: 0; } /* Primeira ordem */
 .cart-header .page-title-header { order: 1; } /* Segunda ordem */
 .cart-header .cart-icon-header { order: 2; margin-right: 0; } /* Terceira ordem, no final */
 
 
-/* ========================================================= */
+
 /* Conteúdo Principal do Carrinho */
-/* ========================================================= */
+
 .cart-main-content {
     flex-grow: 1;
     display: flex;
@@ -98,9 +98,9 @@ body {
     gap: 25px; /* Espaço entre os itens e entre a seção de resumo */
 }
 
-/* ========================================================= */
+
 /* Item do Carrinho */
-/* ========================================================= */
+
 .cart-item {
     display: flex;
     align-items: center;
@@ -152,9 +152,9 @@ body {
     text-align: center;
 }
 
-/* ========================================================= */
+
 /* Resumo do Pedido */
-/* ========================================================= */
+
 .summary-line-separator {
     width: 100%;
     height: 1px;
@@ -182,9 +182,9 @@ body {
     color: #F1EF30; /* Amarelo para o total, como na imagem */
 }
 
-/* ========================================================= */
+
 /* Botão Finalizar Pedido */
-/* ========================================================= */
+
 .checkout-button {
     background-color: #FF6DC0; /* Rosa do botão */
     color: #FFFFFF;
@@ -205,9 +205,9 @@ body {
     background-color: #e05bb0; /* Escurece no hover */
 }
 
-/* ========================================================= */
+
 /* Ícone de Acessibilidade (fixo no canto inferior direito) */
-/* ========================================================= */
+
 .accessibility-icon {
     position: fixed;
     bottom: 20px;
@@ -230,9 +230,9 @@ body {
     transform: scale(1.1);
 }
 
-/* ========================================================= */
+
 /* Responsividade */
-/* ========================================================= */
+
 @media (max-width: 768px) {
     .cart-page-wrapper {
         padding-top: 80px; /* Ajuste para cabeçalho menor */
