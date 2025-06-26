@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutButton = document.querySelector('.checkout-button');
     const accessibilityIcon = document.querySelector('.accessibility-icon');
     const menuToggle = document.querySelector('.menu-toggle');
+    // const carticonheader = document.querySelector ('cart-icon-header') ;
 
     // Custo de entrega (exemplo)
     const DELIVERY_COST = 5.00; // R$ 5,00 de entrega
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // alert('Funcionalidades de Acessibilidade seriam ativadas aqui!');
          window.location.href = 'http://127.0.0.1:5501/P%C3%A1ginas/acessibilidade.html'; 
     });
+
 
     // Evento para o botão de menu (mesmo das outras páginas)
     menuToggle.addEventListener('click', () => {

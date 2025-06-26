@@ -190,7 +190,7 @@ body {
     .register-logo {
         width: 50px;
         margin-top: 20px;
-        margin-bottom: 0px; /* Espaço abaixo do logo */
+        margin-bottom: 0px !important; /* Espaço abaixo do logo */
     }
 
     .input-group {

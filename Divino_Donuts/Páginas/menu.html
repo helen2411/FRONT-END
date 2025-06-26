@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divino Donuts</title>
+    <link rel="stylesheet" href="seus-estilos.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS BÁSICO PARA O MENU E O BOTÃO (pode ir em seus-estilos.css) */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #f7d24a;
+            color: #fff;
+        }
+
+        .main-nav {
+            display: none; /* Escondido por padrão */
+            flex-direction: column;
+            background-color: #333;
+            position: absolute;
+            top: 60px; /* Ajuste conforme a altura do seu cabeçalho */
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .main-nav.is-open {
+            display: flex; /* Mostra o menu quando a classe 'is-open' é adicionada */
+        }
+
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .main-nav ul li {
+            border-bottom: 1px solid #555;
+        }
+
+        .main-nav ul li:last-child {
+            border-bottom: none;
+        }
+
+        .main-nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .main-nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px;
+            display: none; /* Escondido por padrão para telas maiores */
+        }
+
+        /* Mostrar o botão do menu em telas menores (mobile) */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; /* Mostra o botão do menu em telas pequenas */
+            }
+            .main-nav {
+                display: none; /* Garante que o menu principal esteja escondido em mobile */
+            }
+        }
+
+        /* Em telas maiores, o menu pode estar sempre visível, e o botão hidden */
+        @media (min-width: 769px) {
+            .main-nav {
+                display: flex !important; /* Sobrescreve 'display: none' para mobile */
+                flex-direction: row;
+                position: static; /* Remove posicionamento absoluto */
+                box-shadow: none;
+                background-color: transparent; /* Transparente em desktop */
+                width: auto;
+            }
+            .main-nav ul {
+                display: flex;
+            }
+            .main-nav ul li {
+                border-bottom: none;
+                margin-left: 20px;
+            }
+            .main-nav ul li a {
+                color: #333; /* Cor do texto em desktop */
+                padding: 0;
+            }
+            .main-nav ul li a:hover {
+                background-color: transparent;
+                color: #555;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">Divino Donuts</div>
+        <button class="menu-toggle" aria-label="Abrir Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="main-nav" id="mainNavigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <h2>Bem-vindo!</h2>
+        <p>Este é o conteúdo principal da sua página.</p>
+    </main>
+
+    <script>
+        // JavaScript para ativar o menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNavigation = document.getElementById('mainNavigation');
+
+        menuToggle.addEventListener('click', () => {
+            // Alterna a classe 'is-open' no menu de navegação
+            mainNavigation.classList.toggle('is-open');
+
+            // Alterna o atributo aria-expanded para acessibilidade
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // Opcional: Fechar o menu quando um link é clicado (útil para SPAs ou links âncora)
+        mainNavigation.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNavigation.classList.contains('is-open')) {
+                    mainNavigation.classList.remove('is-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Opcional: Fechar o menu se a janela for redimensionada para desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) { // Se for maior que o breakpoint mobile
+                if (mainNavigation.classList.contains('is-open')) {
+                    mainNavigation.classList.remove('is-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
