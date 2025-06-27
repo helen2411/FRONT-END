@@ -38,18 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Adiciona um ouvinte de evento para 'click'
         cadButton.addEventListener('click', function() {
-            // Redireciona para a página 'dashboard.html'
-            // Substitua 'dashboard.html' pela URL da sua página de destino
-            window.location.href = 'http://127.0.0.1:5500/P%C3%A1ginas/home.html';
-            // Ou para uma URL externa: window.location.href = 'https://www.seusite.com/dashboard';
+        // Redireciona para a página 'dashboard.html'
+        // Substitua 'dashboard.html' pela URL da sua página de destino
+        window.location.href = 'http://127.0.0.1:5500/P%C3%A1ginas/home.html';
+        // Ou para uma URL externa: window.location.href = 'https://www.seusite.com/dashboard';
         });
 
 
     // Evento para o ícone de acessibilidade (mesmo do login)
     const accessibilityIcon = document.querySelector('.accessibility-icon');
     accessibilityIcon.addEventListener('click', (event) => {
-        event.preventDefault();
-        // alert('Funcionalidades de Acessibilidade seriam ativadas aqui!');
+    event.preventDefault();
+    
+    // alert('Funcionalidades de Acessibilidade seriam ativadas aqui!');
          window.location.href = 'http://127.0.0.1:5501/P%C3%A1ginas/acessibilidade.html'; 
     });
 });

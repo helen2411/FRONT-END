@@ -74,9 +74,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }))
         });
 
-        // Aqui você enviaria os dados do pedido para o backend
-        // window.location.href = 'confirmation.html'; // Redirecionar para página de confirmação
+    // Aqui você enviaria os dados do pedido para o backend
+    // window.location.href = 'confirmation.html'; // Redirecionar para página de confirmação
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const paymentButton = document.querySelector('.btn-payment-options');
+
+    if (paymentButton) {
+        paymentButton.addEventListener('click', function() {
+            // Lógica para validar ou fazer algo antes
+            // ...
+
+            // Redireciona para a página de formas de pagamento
+            window.location.href = '/formas-de-pagamento';
+        });
+    }
+});
 
     // Evento para o ícone de acessibilidade (mesmo das outras páginas)
     accessibilityIcon.addEventListener('click', (event) => {
@@ -86,12 +100,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // Evento para o botão de menu (mesmo das outras páginas)
-    menuToggle.addEventListener('click', () => {
-        alert('Menu lateral seria aberto aqui!');
-        // Implementar lógica para abrir/fechar um menu lateral (off-canvas)
-    });
+     // JavaScript para ativar o menu
+        const menutoggle = document.querySelector('.menu-toggle');
+        const mainNavigation = document.getElementById('mainNavigation');
+
+        menuToggle.addEventListener('click', () => {
+    // Alterna a classe 'is-open' no menu de navegação
+            mainNavigation.classList.toggle('is-open');
+
+    // Alterna o atributo aria-expanded para acessibilidade
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+
+    // Opcional: Fechar o menu quando um link é clicado (útil para SPAs ou links âncora)
+        mainNavigation.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNavigation.classList.contains('is-open')) {
+                    mainNavigation.classList.remove('is-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+     // Opcional: Fechar o menu se a janela for redimensionada para desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) { // Se for maior que o breakpoint mobile
+                if (mainNavigation.classList.contains('is-open')) {
+                    mainNavigation.classList.remove('is-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
 
     // Inicializa os totais quando a página carrega
     updateCartTotals();
+
 });

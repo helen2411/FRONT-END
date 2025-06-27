@@ -101,9 +101,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // Evento para o botão de menu (no cabeçalho)
-    menuToggle.addEventListener('click', () => {
-        alert('Menu lateral seria aberto aqui!');
-        // Implementar lógica para abrir/fechar um menu lateral (off-canvas)
-    });
+    
+     // JavaScript para ativar o menu
+        const menutoggle = document.querySelector('.menu-toggle');
+        const mainNavigation = document.getElementById('mainNavigation');
+
+        menuToggle.addEventListener('click', () => {
+            // Alterna a classe 'is-open' no menu de navegação
+            mainNavigation.classList.toggle('is-open');
+
+            // Alterna o atributo aria-expanded para acessibilidade
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // Opcional: Fechar o menu quando um link é clicado (útil para SPAs ou links âncora)
+        mainNavigation.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNavigation.classList.contains('is-open')) {
+                    mainNavigation.classList.remove('is-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
 });

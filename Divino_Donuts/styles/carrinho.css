@@ -366,3 +366,139 @@ body {
         right: 10px;
     }
 }
+
+/* CSS BÁSICO PARA O MENU E O BOTÃO  */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #F1EF30; /* Amarelo do botão */
+            color: #fff;
+        }
+
+        .main-nav {
+            display: none; /* Escondido por padrão */
+            flex-direction: column;
+            background-color: #ddf21d;
+            position: absolute;
+            top: 60px; /* Ajuste conforme a altura do seu cabeçalho */
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            border:2px solid white;
+        }
+
+        .main-nav.is-open {
+            display: flex; /* Mostra o menu quando a classe 'is-open' é adicionada */
+        }
+
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .main-nav ul li {
+            border-bottom: 3px solid #ffffff;
+        }
+
+        .main-nav ul li:last-child {
+            border-bottom: none;
+        }
+
+        .main-nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .main-nav ul li a:hover {
+            background-color: #00ccff;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px;
+            
+        }
+
+        /* Mostrar o botão do menu em telas menores (mobile) */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block; /* Mostra o botão do menu em telas pequenas */
+            }
+            .main-nav {
+                display: none; /* Garante que o menu principal esteja escondido em mobile */
+            }
+        }
+
+        /* Em telas maiores, o menu pode estar sempre visível, e o botão hidden */
+        @media (min-width: 769px) {
+            .main-nav {
+                display: none; /* Escondido por padrão */
+                flex-direction: column;
+                background-color: #ddf21d;
+                position: absolute;
+                top: 60px; /* Ajuste conforme a altura do seu cabeçalho */
+                left: 0;
+                width: 15%;
+                z-index: 999;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                border:2px solid white;
+            }
+            .main-nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+            .main-nav ul li {
+                border-bottom: 3px solid #ffffff;
+            }
+            .main-nav ul li a {
+                display: block;
+                padding: 15px 20px;
+                color: #fff;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+            .main-nav ul li a:hover {
+                background-color: transparent; 
+                color: #00ccff;
+            }
+        }
+
+.payment-options-link {
+    /* Centralizar, se desejar, como o botão "Finalizar Pedido" */
+    text-align: center;
+    margin-top: 20px; /* Adicione um espaçamento acima */
+}
+
+.btn-payment-options {
+    display: inline-block; /* Para que margin, padding, etc., funcionem bem */
+    padding: 15px 30px; /* Preenchimento interno */
+    background-color: #ff66b2; /* Cor de fundo semelhante ao "Finalizar Pedido" */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda padrão do botão */
+    border-radius: 8px; /* Cantos arredondados */
+    font-size: 1.1em; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Indica que é clicável */
+    text-decoration: none; /* Remove sublinhado para links */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.btn-payment-options:hover {
+    background-color: #e65c9f; /* Cor um pouco mais escura no hover */
+}

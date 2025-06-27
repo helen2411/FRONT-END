@@ -30,4 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Se houver alguma funcionalidade dinâmica para os main-content-box, seria adicionada aqui.
+    
 });
